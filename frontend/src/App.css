@@ -78,6 +78,7 @@ h6 {
   }
 }
 .hero {
+  height: 100vh;
   display: flex;
   gap: 50px;
   padding-top: 120px;
@@ -132,7 +133,7 @@ h6 {
     transform: translateY(0);
   }
   100% {
-    transform: translateY(20px);
+    transform: translateY(100px);
   }
 }
 @media (max-width: 1186px) {

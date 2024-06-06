@@ -7,8 +7,8 @@ import MessageForm from "../components/MessageForm";
 function Home() {
   return <>
     
-      <Hero title={"Welcome toPatient-Centric Health Management "} imageUrl={"/images/hero1.png"}/>
-      <Biography/>
+      <Hero title={"Welcome to Patient-Centric Health Management "} imageUrl={"/images/hero1.png"}/>
+      <Biography imageUrl={"/images/About.png"}/>
       <Department/>
       <MessageForm/>
     
