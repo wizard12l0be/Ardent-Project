@@ -1,8 +1,11 @@
-// eslint-disable-next-line no-unused-vars
-import React from "react";
+import React from 'react'
 
-const Appointment = () => {
-  return <div></div>;
-};
+function Appointment() {
+  return (
+    <div>
+      
+    </div>
+  )
+}
 
-export default Appointment;
+export default Appointment
