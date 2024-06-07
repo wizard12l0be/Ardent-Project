@@ -5,7 +5,7 @@ import React from 'react'
 function Biography({imageUrl}) {
   return (
     <div className='container biography'>
-    <div className='banner'>
+    <div className='banner bioImg'>
     <img src={imageUrl} alt='images/About.png' />
     </div>
      <div className='banner'>
