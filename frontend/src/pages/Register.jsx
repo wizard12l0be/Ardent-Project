@@ -66,14 +66,14 @@ const Register = () => {
         <form onSubmit={handleRegistration}>
           <div>
             <input
-            className="Name"
+            style={{ borderRadius: 50, marginLeft: 25, marginRight: 10 }}
               type="text"
               placeholder="First Name"
               value={firstName}
               onChange={(e) => setFirstName(e.target.value)}
             />
             <input
-              className="Name"
+              style={{ borderRadius: 50, marginRight: 25 }}
               type="text"
               placeholder="Last Name"
               value={lastName}
@@ -82,12 +82,14 @@ const Register = () => {
           </div>
           <div>
             <input
+              style={{ borderRadius: 50, marginLeft: 25, marginRight: 10 }}
               type="text"
               placeholder="Email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
             />
             <input
+              style={{ borderRadius: 50, marginRight: 25 }}
               type="number"
               placeholder="Mobile Number"
               value={phone}
@@ -96,12 +98,14 @@ const Register = () => {
           </div>
           <div>
             <input
+              style={{ borderRadius: 50, marginLeft: 25, marginRight: 10, height: 55 }}
               type="number"
               placeholder="NIC"
               value={nic}
               onChange={(e) => setNic(e.target.value)}
             />
             <input
+              style={{ borderRadius: 50, marginRight: 25, height: 55, fontSize: 18, color: "#9083d5" }}
               type={"date"}
               placeholder="Date of Birth"
               value={dob}
@@ -109,12 +113,13 @@ const Register = () => {
             />
           </div>
           <div>
-            <select value={gender} onChange={(e) => setGender(e.target.value)}>
+            <select value={gender} onChange={(e) => setGender(e.target.value)} style={{ borderRadius: 50, marginLeft: 25, marginRight: 10, fontSize: 18 }}>
               <option value="">Select Gender</option>
               <option value="Male">Male</option>
               <option value="Female">Female</option>
             </select>
             <input
+              style={{ borderRadius: 50, marginRight: 25 }}
               type="password"
               placeholder="Password"
               value={password}
@@ -131,7 +136,7 @@ const Register = () => {
             <p style={{ marginBottom: 0 }} className="question">Already Registered?</p>
             <Link
               to={"/signin"}
-              style={{ textDecoration: "none", color: "#271776ca" }}
+              style={{ textDecoration: "none", color: "#271776ca", fontWeight: "bold" }}
             >
               Login Now
             </Link>
