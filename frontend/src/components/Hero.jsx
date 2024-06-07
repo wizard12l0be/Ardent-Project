@@ -1,5 +1,7 @@
+// eslint-disable-next-line no-unused-vars
 import React from 'react'
 
+// eslint-disable-next-line react/prop-types
 const Hero = ({ title, imageUrl }) => {
   return (
     <>
@@ -10,7 +12,7 @@ const Hero = ({ title, imageUrl }) => {
           Patient-Centric Health Management Institute is a state-of-the-art facility dedicated
             to providing comprehensive healthcare services with compassion and
             expertise. Our team of skilled professionals is committed to
-            delivering personalized care tailored to each patient's needs. At
+            delivering personalized care tailored to each patients needs. At
             ZeeCare, we prioritize your well-being, ensuring a harmonious
             journey towards optimal health and wellness.
           </p>
