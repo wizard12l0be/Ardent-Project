@@ -1,12 +1,17 @@
 // eslint-disable-next-line no-unused-vars
-import React from 'react'
-
-function AboutUs() {
+import React from "react";
+import Hero from "../components/Hero";
+import Biography from "../components/Biography";
+const AboutUs = () => {
   return (
-    <div>
-      
-    </div>
-  )
-}
+    <>
+      <Hero
+        title={"Learn More About Us | ZeeCare Medical Institute"}
+        imageUrl={"/about.png"}
+      />
+      <Biography imageUrl={"/whoweare.png"} />
+    </>
+  );
+};
 
-export default AboutUs
+export default AboutUs;
