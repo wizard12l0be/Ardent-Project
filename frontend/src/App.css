@@ -282,7 +282,12 @@ h6 {
   text-align: center;
   /* margin-left: 200px; */
 }
-
+.login-form:hover {
+  box-shadow: 14px 14px 20px #cbced1, -14px -14px 20px rgb(192, 190, 190);
+}
+.register-form:hover {
+  box-shadow: 14px 14px 20px #cbced1, -14px -14px 20px rgb(192, 190, 190);
+}
 .login-form .describe {
   color: rgb(217, 214, 214);
   text-align: center;
