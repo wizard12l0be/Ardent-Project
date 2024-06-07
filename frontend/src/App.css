@@ -7,8 +7,7 @@
   font-family: "Montserrat", sans-serif;
 }
 body {
-  background: linear-gradient(to right, #00c6ff, #54a1ff);
-
+  background: linear-gradient(to right, #00c6ff, #54a1ff); 
 }
 .banner{
   color: white;
@@ -96,7 +95,7 @@ h6 {
   letter-spacing: 2px;
   word-spacing: 6px;
   font-size: 50px;
-  background: linear-gradient(to right, #ffffff, #f0f0f0, #e0e0e0, #d0d0d0, #2c90ee);
+  background: linear-gradient(to right, #ffffff, #f0f0f0, #e0e0e0, #d0d0d0, #ecf1f7);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -126,6 +125,7 @@ h6 {
 }
 .animated-image {
   animation: moveUpDown 1s infinite alternate ease-in-out;
+  box-shadow: 1px 1px 20px blue;
 }
 
 @keyframes moveUpDown {
@@ -268,6 +268,10 @@ h6 {
   gap: 50px;
   padding-top: 40px;
   padding-bottom: 60px;
+}
+.bioImg{
+  filter:drop-shadow(1px 1px 20px rgb(237, 237, 240));
+  box-shadow: 1px 1px 15px rgb(248, 248, 250);
 }
 .biography .banner:first-child {
   flex: 1;

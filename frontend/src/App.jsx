@@ -9,10 +9,12 @@ import Register from "./pages/Register";
 import Login from "./pages/Login";
 import { ToastContainer } from 'react-toastify';
   import 'react-toastify/dist/ReactToastify.css';
+import ParticlesBackground from "./components/ParticlesBackground";
 
 function App() {
   return (
     <>
+    <ParticlesBackground/>
       <Router>
         <Routes>
           <Route path="/" element={<Home />}></Route>
