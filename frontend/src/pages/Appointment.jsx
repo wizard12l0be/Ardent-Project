@@ -1,12 +1,18 @@
 // eslint-disable-next-line no-unused-vars
-import React from 'react'
+import React from "react";
+import Hero from "../components/Hero";
+import AppointmentForm from "../components/AppoinmentForm";
 
-function Appointment() {
+const Appointment = () => {
   return (
-    <div>
-      
-    </div>
-  )
-}
+    <>
+      <Hero
+        title={"Schedule Your Appointment | ZeeCare Medical Institute"}
+        imageUrl={"/signin.png"}
+      />
+      <AppointmentForm />
+    </>
+  );
+};
 
-export default Appointment
+export default Appointment;

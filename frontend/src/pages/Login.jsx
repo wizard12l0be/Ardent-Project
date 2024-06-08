@@ -47,25 +47,28 @@ const Login = () => {
     <>
       <div className="container form-component login-form">
         <h2>Sign In</h2>
-        <p>Please Login To Continue</p>
-        <p>
+        <p className="continue">Please Login To Continue</p>
+        <p className="describe">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat culpa
           voluptas expedita itaque ex, totam ad quod error?
         </p>
         <form onSubmit={handleLogin}>
           <input
+            style={{ borderRadius: 50, marginLeft: 25, marginRight: 10 }}
             type="text"
             placeholder="Email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
           />
           <input
+            style={{ borderRadius: 50, marginLeft: 25, marginRight: 10 }}
             type="password"
             placeholder="Password"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
           />
           <input
+            style={{ borderRadius: 50, marginLeft: 25, marginRight: 10 }}
             type="password"
             placeholder="Confirm Password"
             value={confirmPassword}
@@ -78,10 +81,10 @@ const Login = () => {
               flexDirection: "row",
             }}
           >
-            <p style={{ marginBottom: 0 }}>Not Registered?</p>
+            <p style={{ marginBottom: 0, color: "white" }}>Not Registered?</p>
             <Link
               to={"/register"}
-              style={{ textDecoration: "none", color: "#271776ca" }}
+              style={{ textDecoration: "none", color: "#271776ca", fontWeight: "bold"}}
             >
               Register Now
             </Link>
