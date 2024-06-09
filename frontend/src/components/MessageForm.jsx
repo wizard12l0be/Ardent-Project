@@ -1,7 +1,9 @@
 
 import axios from "axios";
+// eslint-disable-next-line no-unused-vars
 import React, { useState } from "react";
 import { toast } from "react-toastify";
+import "../App.css";
 
 const MessageForm = () => {
   const [firstName, setFirstName] = useState("");
@@ -42,12 +44,14 @@ const MessageForm = () => {
         <form onSubmit={handleMessage}>
           <div>
             <input
+              style={{ borderRadius: 50, marginLeft: 25, marginRight: 10 }}
               type="text"
               placeholder="First Name"
               value={firstName}
               onChange={(e) => setFirstName(e.target.value)}
             />
             <input
+              style={{ borderRadius: 50, marginRight: 25 }}
               type="text"
               placeholder="Last Name"
               value={lastName}
@@ -56,12 +60,14 @@ const MessageForm = () => {
           </div>
           <div>
             <input
+              style={{ borderRadius: 50, marginLeft: 25, marginRight: 10 }}
               type="text"
               placeholder="Email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
             />
             <input
+              style={{ borderRadius: 50, marginRight: 25 }}
               type="number"
               placeholder="Mobile Number"
               value={phone}
@@ -69,6 +75,8 @@ const MessageForm = () => {
             />
           </div>
           <textarea
+            style={{ borderRadius: 50, marginLeft: 25, marginRight: 25, height: 40 }}
+            className="message"
             rows={7}
             placeholder="Message"
             value={message}

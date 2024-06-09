@@ -1,9 +1,11 @@
+// eslint-disable-next-line no-unused-vars
 import React, { useContext, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { GiHamburgerMenu } from "react-icons/gi";
 import axios from "axios";
 import { toast } from "react-toastify";
 import { Context } from "../main";
+import "../App.css"
 
 const Navbar = () => {
   const [show, setShow] = useState(false);
@@ -31,15 +33,17 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className={"container"}>
+      <nav className={"container"} style={{ position: "fixed", backgroundColor: "rgba(255, 255, 255, 0.5)",color:"white" }}>
+      
         <div className="logo">
           <img src="/logo.png" alt="logo" className="logo-img" />
         </div>
         <div className={show ? "navLinks showmenu" : "navLinks"}>
           <div className="links">
-            <Link to={"/"} onClick={() => setShow(!show)}>
+            <Link to={"/"} onClick={() => setShow(!show)} style={{ color:"blue" }}>
               Home
             </Link>
+<<<<<<< HEAD
             <Link to={"/about"} onClick={() => setShow(!show)}>
               AboutUs
             </Link>
@@ -47,13 +51,21 @@ const Navbar = () => {
               Appointment
             </Link>
             
+=======
+            <Link to={"/appointment"} onClick={() => setShow(!show)} style={{ color: "blue" }}>
+              Appointment
+            </Link>
+            <Link to={"/about"} onClick={() => setShow(!show)} style={{ color: "blue" }}>
+              About Us
+            </Link>
+>>>>>>> 931c98dd0b2457cc19290aa54a22b562445d088f
           </div>
           {isAuthenticated ? (
             <button className="logoutBtn btn" onClick={handleLogout}>
               LOGOUT
             </button>
           ) : (
-            <button className="loginBtn btn" onClick={goToLogin}>
+              <button className="loginBtn btn" onClick={goToLogin} >
               LOGIN
             </button>
           )}
