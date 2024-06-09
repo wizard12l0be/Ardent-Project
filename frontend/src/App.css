@@ -263,6 +263,19 @@ h6 {
     padding: 30px;
     text-align: center;
 }
+.message-form {
+  max-width: 1200px;
+    margin: 100px auto 20px auto;
+    background: rgba(255, 255, 255, 0.121);
+    border-radius: 15px;
+    /* box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); */
+    /* box-shadow: 14px 14px 20px #cbced1, -14px -14px 20px rgb(192, 190, 190); */
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 30px;
+    text-align: center;
+}
 .login-form h2 {
   /* color: #000; */
   background: linear-gradient(to right, rgb(126, 30, 245), rgb(3, 45, 75));
@@ -272,6 +285,13 @@ h6 {
     text-fill-color: transparent;
 }
 .appointment-form h2 {
+  background: linear-gradient(to right, rgb(126, 30, 245), rgb(3, 45, 75));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+.message-form h2{
   background: linear-gradient(to right, rgb(126, 30, 245), rgb(3, 45, 75));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -309,6 +329,9 @@ h6 {
   box-shadow: 14px 14px 20px #cbced1, -14px -14px 20px rgb(192, 190, 190);
 }
 .appointment-form:hover {
+  box-shadow: 14px 14px 20px #cbced1, -14px -14px 20px rgb(192, 190, 190);
+}
+.message-form:hover {
   box-shadow: 14px 14px 20px #cbced1, -14px -14px 20px rgb(192, 190, 190);
 }
 .login-form .describe {
@@ -355,6 +378,23 @@ textarea {
     /* border-radius: 100px; */
     box-shadow: inset 6px 6px 6px #e6e8ea, inset -6px -6px 6px white;
 }
+textarea .message {
+  background: #ecf0f3;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    border-radius: 80px;
+    /* box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); */
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    /* border: 2px solid rgba(255, 255, 255, 0.8); */
+    /* Enhanced white border */
+    /* padding: 30px; */
+    /* text-align: center; */
+    /* width: 300px; */
+    /* border-radius: 100px; */
+    box-shadow: inset 6px 6px 6px #e6e8ea, inset -6px -6px 6px white;
+}
 /* .register-form .container{
   background-color: white;
 } */
@@ -374,6 +414,8 @@ select {
 button:hover {
   background: linear-gradient(to left, #08a8c4, #02336b);
 }
+
+
 @media (max-width: 1110px) {
   .appointment-form form div:nth-child(4) {
     flex-direction: column;
