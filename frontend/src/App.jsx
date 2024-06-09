@@ -10,6 +10,8 @@ import Login from "./pages/Login";
 import { ToastContainer } from 'react-toastify';
   import 'react-toastify/dist/ReactToastify.css';
 import Navbar from "./components/Nevbar";
+// eslint-disable-next-line no-unused-vars
+import Footer from "./components/Footer";
 
 
 
@@ -25,7 +27,9 @@ function App() {
           <Route path="/appointment" element={<Appoinment />}></Route>
           <Route path="/register" element={<Register />}></Route>
           <Route path="/login" element={<Login />}></Route>
+          
         </Routes>
+        <Footer/>
         <ToastContainer position="top-center"/>
         </Router>
     </>

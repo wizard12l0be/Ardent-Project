@@ -414,7 +414,9 @@ select {
 button:hover {
   background: linear-gradient(to left, #08a8c4, #02336b);
 }
-
+footer h4{
+  color: white;
+}
 
 @media (max-width: 1110px) {
   .appointment-form form div:nth-child(4) {
