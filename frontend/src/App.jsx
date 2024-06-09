@@ -9,7 +9,7 @@ import Register from "./pages/Register";
 import Login from "./pages/Login";
 import { ToastContainer } from 'react-toastify';
   import 'react-toastify/dist/ReactToastify.css';
-import Navbar from "./components/Nevbar";
+import Navbar from "./components/Navbar";
 // eslint-disable-next-line no-unused-vars
 import Footer from "./components/Footer";
 
