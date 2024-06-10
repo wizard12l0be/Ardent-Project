@@ -4,6 +4,8 @@ import React, { useContext, useState } from "react";
 import { toast } from "react-toastify";
 import { Context } from "../main";
 import { Link, useNavigate, Navigate } from "react-router-dom";
+import "../App.css"
+
 
 const Login = () => {
   const { isAuthenticated, setIsAuthenticated } = useContext(Context);
@@ -45,6 +47,8 @@ const Login = () => {
 
   return (
     <>
+      
+      
       <div className="container form-component login-form">
         <h2>Sign In</h2>
         <p className="continue">Please Login To Continue</p>
@@ -94,6 +98,7 @@ const Login = () => {
           </div>
         </form>
       </div>
+      
     </>
   );
 };

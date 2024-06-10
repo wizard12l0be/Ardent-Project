@@ -7,7 +7,8 @@
   font-family: "Montserrat", sans-serif;
 }
 body {
-  background: linear-gradient(to right, #00c6ff, #54a1ff); 
+  background: linear-gradient(to right, #00c6ff, #54a1ff);  
+  /* background-image: url("https: //img.freepik.com/free-vector/abstract-medical-wallpaper-template-design_53876-61802.jpg?t=st=1717915513~exp=1717919113~hmac=ac6937c5fe74cb27786b0879c451a10e4787e9cbe8db8ee934ea28700a291781&w=1060"); */
 }
 
 .banner{
