@@ -7,7 +7,8 @@
   font-family: "Montserrat", sans-serif;
 }
 body {
-  background: linear-gradient(to right, #00c6ff, #54a1ff); 
+  /* background: linear-gradient(to right, #00c6ff, #54a1ff);  */
+  background-color: white;
 }
 
 .banner{
