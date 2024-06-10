@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-unused-vars
 import React, { useContext, useState } from "react";
 import { FaHome } from "react-icons/fa";
 import { RiLogoutBoxFill } from "react-icons/ri";

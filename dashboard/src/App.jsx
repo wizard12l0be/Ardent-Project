@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-unused-vars
 import React, { useContext, useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Dashboard from "./components/Dashboard";
@@ -14,6 +15,7 @@ import AddNewAdmin from "./components/AddNewAdmin";
 import "./App.css";
 
 const App = () => {
+  // eslint-disable-next-line no-unused-vars
   const { isAuthenticated, setIsAuthenticated, admin, setAdmin } =
     useContext(Context);
 
