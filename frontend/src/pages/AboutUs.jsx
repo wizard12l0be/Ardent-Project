@@ -9,7 +9,7 @@ const AboutUs = () => {
         title={"Learn More About Us | ZeeCare Medical Institute"}
         imageUrl={"/about.png"}
       />
-      <Biography imageUrl={"images/who.jpg"} />
+      <Biography imageUrl={"public/images/who.jpg"} />
     </>
   );
 };
