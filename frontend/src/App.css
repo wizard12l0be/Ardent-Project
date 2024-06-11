@@ -233,7 +233,8 @@ h6 {
   margin: 100px auto 20px auto;
   max-width: 800px;
   text-align: center;
-  background: rgba(255, 255, 255, 0.121);
+  /* background: rgba(96, 200, 235, 0.89); */
+  background: linear-gradient(to right, #00c6ff, #54a1ff);
     border-radius: 15px;
     /* box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); */
     /* box-shadow: 14px 14px 20px #cbced1, -14px -14px 20px rgb(192, 190, 190); */
@@ -241,6 +242,9 @@ h6 {
     -webkit-backdrop-filter: blur(10px);
     border: 1px solid rgba(255, 255, 255, 0.2);
     padding: 30px;
+}
+.login-form:hover {
+  background: linear-gradient(to right, #54a1ff, #00c6ff);
 }
 .register-form {
   max-width: 1200px;
@@ -289,6 +293,7 @@ h6 {
     background-clip: text;
     text-fill-color: transparent;
 }
+
 .appointment-form h2 {
   background: linear-gradient(to right, rgb(126, 30, 245), rgb(3, 45, 75));
     -webkit-background-clip: text;
@@ -327,7 +332,7 @@ h6 {
   text-align: center;
   /* margin-left: 200px; */
 }
-.login-form:hover {
+.login-form {
   box-shadow: 14px 14px 20px #cbced1, -14px -14px 20px rgb(192, 190, 190);
 }
 .register-form:hover {
@@ -671,7 +676,7 @@ nav {
   word-spacing: 40px;
   position: fixed;
   /* background-color: #1e5799; */
-  background-color: rgba(255, 255, 255, 0.5); /* 50% opacity */
+  background-color: rgba(164, 231, 248, 0.68); /* 50% opacity */
   box-shadow: #08a8c4;
 
 
