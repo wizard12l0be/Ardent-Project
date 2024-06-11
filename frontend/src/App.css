@@ -449,12 +449,14 @@ footer h4{
 .biography {
   display: flex;
   gap: 50px;
-  padding-top: 40px;
+  padding-top: 50px;
   padding-bottom: 60px;
 }
 .bioImg{
-  filter:drop-shadow(1px 1px 20px rgb(237, 237, 240));
-  box-shadow: 1px 1px 15px rgb(248, 248, 250);
+  box-shadow: 1px 1px 15px blue;
+
+  filter:drop-shadow(1px 1px 20px rgb(0,0,255));
+  /* box-shadow: 1px 1px 15px rgb(248, 248, 250); */
 }
 .biography .banner:first-child {
   flex: 1;
@@ -466,15 +468,19 @@ footer h4{
   flex: 1;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 20px;
+  color: #08a8c4;
 }
 .biography .banner h3 {
   font-weight: 700;
-  letter-spacing: 3px;
+  /* letter-spacing: 3px; */
+  letter-spacing: 6px;
+  color: #08a8c4;
 }
 .biography .banner p:first-child {
   font-size: 24px;
-  letter-spacing: 2px;
+  letter-spacing: 6px;
+  color: #08a8c4;
 }
 @media (max-width: 925px) {
   .biography {
