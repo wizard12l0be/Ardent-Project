@@ -249,7 +249,8 @@ h6 {
 .register-form {
   max-width: 1200px;
   margin: 100px auto 20px auto;
-  background: rgba(255, 255, 255, 0.121);
+  /* background: rgba(255, 255, 255, 0.121); */
+  background: linear-gradient(to right, #00c6ff, #54a1ff);
     border-radius: 15px;
     /* box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); */
     /* box-shadow: 14px 14px 20px #cbced1, -14px -14px 20px rgb(192, 190, 190); */
@@ -258,11 +259,16 @@ h6 {
     border: 1px solid rgba(255, 255, 255, 0.2);
     padding: 30px;
     text-align: center;
+    margin-bottom: 100px;
+}
+.register-form:hover {
+  background: linear-gradient(to right, #54a1ff, #00c6ff);
 }
 .appointment-form {
   max-width: 1200px;
     margin: 100px auto 20px auto;
-    background: rgba(255, 255, 255, 0.121);
+    /* background: rgba(255, 255, 255, 0.121); */
+    background: linear-gradient(to right, #00c6ff, #54a1ff);
     border-radius: 15px;
     /* box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); */
     /* box-shadow: 14px 14px 20px #cbced1, -14px -14px 20px rgb(192, 190, 190); */
@@ -271,11 +277,16 @@ h6 {
     border: 1px solid rgba(255, 255, 255, 0.2);
     padding: 30px;
     text-align: center;
+    margin-bottom: 100px;
+}
+.appointment-form:hover {
+  background: linear-gradient(to right, #54a1ff, #00c6ff);
 }
 .message-form {
   max-width: 1200px;
     margin: 100px auto 20px auto;
-    background: rgba(255, 255, 255, 0.121);
+    /* background: rgba(255, 255, 255, 0.121); */
+    background: linear-gradient(to right, #00c6ff, #54a1ff);
     border-radius: 15px;
     /* box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); */
     /* box-shadow: 14px 14px 20px #cbced1, -14px -14px 20px rgb(192, 190, 190); */
@@ -284,6 +295,10 @@ h6 {
     border: 1px solid rgba(255, 255, 255, 0.2);
     padding: 30px;
     text-align: center;
+    margin-bottom: 100px;
+}
+.message-form:hover {
+  background: linear-gradient(to right, #54a1ff, #00c6ff);
 }
 .login-form h2 {
   /* color: #000; */
@@ -335,13 +350,13 @@ h6 {
 .login-form {
   box-shadow: 14px 14px 20px #cbced1, -14px -14px 20px rgb(192, 190, 190);
 }
-.register-form:hover {
+.register-form {
   box-shadow: 14px 14px 20px #cbced1, -14px -14px 20px rgb(192, 190, 190);
 }
-.appointment-form:hover {
+.appointment-form {
   box-shadow: 14px 14px 20px #cbced1, -14px -14px 20px rgb(192, 190, 190);
 }
-.message-form:hover {
+.message-form {
   box-shadow: 14px 14px 20px #cbced1, -14px -14px 20px rgb(192, 190, 190);
 }
 .login-form .describe {
