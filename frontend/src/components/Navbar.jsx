@@ -1,9 +1,11 @@
+// eslint-disable-next-line no-unused-vars
 import React, { useContext, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { GiHamburgerMenu } from "react-icons/gi";
 import axios from "axios";
 import { toast } from "react-toastify";
 import { Context } from "../main";
+import "../App.css";
 
 const Navbar = () => {
   const [show, setShow] = useState(false);
@@ -31,7 +33,7 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className={"container"}>
+      <nav className={"container"} >
         <div className="logo">
           <img src="/logo.png" alt="logo" className="logo-img" />
         </div>

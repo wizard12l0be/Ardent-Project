@@ -129,9 +129,11 @@ h6 {
 }
 .animated-image {
   animation: moveUpDown 1s infinite alternate ease-in-out;
+  /* box-shadow: 1px 1px 20px blue; */
+}
+.animated-image:hover {
   box-shadow: 1px 1px 20px blue;
 }
-
 @keyframes moveUpDown {
   0% {
     transform: translateY(0);
@@ -231,7 +233,8 @@ h6 {
   margin: 100px auto 20px auto;
   max-width: 800px;
   text-align: center;
-  background: rgba(255, 255, 255, 0.121);
+  /* background: rgba(96, 200, 235, 0.89); */
+  background: linear-gradient(to right, #00c6ff, #54a1ff);
     border-radius: 15px;
     /* box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); */
     /* box-shadow: 14px 14px 20px #cbced1, -14px -14px 20px rgb(192, 190, 190); */
@@ -239,6 +242,9 @@ h6 {
     -webkit-backdrop-filter: blur(10px);
     border: 1px solid rgba(255, 255, 255, 0.2);
     padding: 30px;
+}
+.login-form:hover {
+  background: linear-gradient(to right, #54a1ff, #00c6ff);
 }
 .register-form {
   max-width: 1200px;
@@ -287,6 +293,7 @@ h6 {
     background-clip: text;
     text-fill-color: transparent;
 }
+
 .appointment-form h2 {
   background: linear-gradient(to right, rgb(126, 30, 245), rgb(3, 45, 75));
     -webkit-background-clip: text;
@@ -325,7 +332,7 @@ h6 {
   text-align: center;
   /* margin-left: 200px; */
 }
-.login-form:hover {
+.login-form {
   box-shadow: 14px 14px 20px #cbced1, -14px -14px 20px rgb(192, 190, 190);
 }
 .register-form:hover {
@@ -453,10 +460,8 @@ footer h4{
   padding-bottom: 60px;
 }
 .bioImg{
-  box-shadow: 1px 1px 15px blue;
-
-  filter:drop-shadow(1px 1px 20px rgb(0,0,255));
-  /* box-shadow: 1px 1px 15px rgb(248, 248, 250); */
+  filter:drop-shadow(1px 1px 20px rgb(237, 237, 240));
+  box-shadow: 1px 1px 15px rgb(248, 248, 250);
 }
 .biography .banner:first-child {
   flex: 1;
@@ -597,6 +602,10 @@ footer .content div:last-child div svg {
   font-size: 50px;
   text-align: center;
 }
+.depart-name:hover {
+  background-color: #383737;
+  color: white;
+}
 .card {
   position: relative;
   border-radius: 8px;
@@ -613,6 +622,7 @@ footer .content div:last-child div svg {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   box-shadow: 1px 1px 20px rgb(247, 247, 248);
 }
+
 .card:hover {
   transform: translateY(-10px);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
@@ -669,7 +679,7 @@ nav {
   word-spacing: 40px;
   position: fixed;
   /* background-color: #1e5799; */
-  background-color: rgba(255, 255, 255, 0.5); /* 50% opacity */
+  background-color: rgba(164, 231, 248, 0.68); /* 50% opacity */
   box-shadow: #08a8c4;
 
 
@@ -703,7 +713,13 @@ nav .navLinks .links a {
   word-spacing: 70px;
 }
 nav .navLinks .links a:hover {
-  color: #000;
+  height: 50px;
+  width: 200px;
+  padding-top: 10px;
+  border-radius: 8px;
+  text-align: center;
+  background-color: #57d4f7b2;
+  /* color: #000; */
   transition: 0.3s;
   cursor: pointer;
 }

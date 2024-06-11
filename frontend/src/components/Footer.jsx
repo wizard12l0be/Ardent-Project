@@ -41,9 +41,9 @@ const Footer = () => {
 
   return (
     <>
-      <footer className={"container"}>
-        <hr />
-        <div className="content">
+      <footer className={"container"} style={{ backgroundColor: "#02336b" }}>
+        {/* <hr /> */}
+        <div className="content" style={{paddingTop: 35}}>
           <div>
             <img src="/logo.png" alt="logo" className="logo-img" />
           </div>
