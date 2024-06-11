@@ -7,7 +7,7 @@ const AboutUs = () => {
     <>
       <Hero
         title={"Learn More About Us | ZeeCare Medical Institute"}
-        imageUrl={"/about.png"}
+        imageUrl={"/images/doctor-with-stethoscope-removebg-preview.png"}
       />
       <Biography imageUrl={"public/images/who.jpg"} />
     </>

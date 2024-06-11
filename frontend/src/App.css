@@ -99,7 +99,7 @@ h6 {
   font-size: 50px;
   background: linear-gradient(to right, #ffffff, #f0f0f0, #e0e0e0, #d0d0d0, #ecf1f7);
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  -webkit-text-fill-color: transparent; 
 }
 .hero .banner p {
   color:whitesmoke;
@@ -127,9 +127,11 @@ h6 {
 }
 .animated-image {
   animation: moveUpDown 1s infinite alternate ease-in-out;
+  /* box-shadow: 1px 1px 20px blue; */
+}
+.animated-image:hover {
   box-shadow: 1px 1px 20px blue;
 }
-
 @keyframes moveUpDown {
   0% {
     transform: translateY(0);
@@ -453,6 +455,7 @@ footer h4{
 .bioImg{
   filter:drop-shadow(1px 1px 20px rgb(237, 237, 240));
   box-shadow: 1px 1px 15px rgb(248, 248, 250);
+  object-fit: cover;
 }
 .biography .banner:first-child {
   flex: 1;
@@ -589,6 +592,10 @@ footer .content div:last-child div svg {
   font-size: 50px;
   text-align: center;
 }
+.depart-name:hover {
+  background-color: #383737;
+  color: white;
+}
 .card {
   position: relative;
   border-radius: 8px;
@@ -605,6 +612,7 @@ footer .content div:last-child div svg {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   box-shadow: 1px 1px 20px rgb(247, 247, 248);
 }
+
 .card:hover {
   transform: translateY(-10px);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
