@@ -270,7 +270,7 @@ h6 {
   max-width: 1200px;
     margin: 100px auto 20px auto;
     /* background: rgba(255, 255, 255, 0.121); */
-    background: linear-gradient(to right, #00c6ff, #54a1ff);
+    /* background: linear-gradient(to right, #00c6ff, #54a1ff); */
     border-radius: 15px;
     /* box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); */
     /* box-shadow: 14px 14px 20px #cbced1, -14px -14px 20px rgb(192, 190, 190); */
@@ -447,6 +447,7 @@ select {
 } */
 footer h4{
   color: white;
+  
 }
 
 @media (max-width: 1110px) {
@@ -910,8 +911,13 @@ input[type="time"]:before {
   margin-right: 0.5em;
 }
 .logo-img{
-  width: 150px;
+  width: 80px;
+  height: 70px;
 }
 footer .logo-img{
   width: 100%;
+}
+.logo-img-footer{
+  height: 70px;
+  width: 80px;
 }
