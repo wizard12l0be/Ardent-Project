@@ -44,14 +44,14 @@ const MessageForm = () => {
         <form onSubmit={handleMessage}>
           <div>
             <input
-              style={{ borderRadius: 50, marginLeft: 25, marginRight: 10 }}
+              style={{ borderRadius: 10, marginLeft: 25, marginRight: 10 ,backgroundColor:"white"}}
               type="text"
               placeholder="First Name"
               value={firstName}
               onChange={(e) => setFirstName(e.target.value)}
             />
             <input
-              style={{ borderRadius: 50, marginRight: 25 }}
+              style={{ borderRadius: 10, marginRight: 25,backgroundColor:"white" }}
               type="text"
               placeholder="Last Name"
               value={lastName}
@@ -60,14 +60,14 @@ const MessageForm = () => {
           </div>
           <div>
             <input
-              style={{ borderRadius: 50, marginLeft: 25, marginRight: 10 }}
+              style={{ borderRadius: 10, marginLeft: 25, marginRight: 10 ,backgroundColor:"white"}}
               type="text"
               placeholder="Email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
             />
             <input
-              style={{ borderRadius: 50, marginRight: 25 }}
+              style={{ borderRadius: 10, marginRight: 25 ,backgroundColor:"white"}}
               type="number"
               placeholder="Mobile Number"
               value={phone}
@@ -75,7 +75,7 @@ const MessageForm = () => {
             />
           </div>
           <textarea
-            style={{ borderRadius: 50, marginLeft: 25, marginRight: 25, height: 40 }}
+            style={{ borderRadius: 10, marginLeft: 25, marginRight: 25, height: 40 ,backgroundColor:"white"}}
             className="message"
             rows={7}
             placeholder="Message"
@@ -83,7 +83,9 @@ const MessageForm = () => {
             onChange={(e) => setMessage(e.target.value)}
           />
           <div style={{ justifyContent: "center", alignItems: "center" }}>
-            <button type="submit">Send</button>
+            <button 
+            className="mszBtn"
+            type="submit">Send</button>
           </div>
         </form>
         <img src="/Vector.png" alt="vector" />
