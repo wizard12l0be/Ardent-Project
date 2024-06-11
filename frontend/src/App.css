@@ -710,7 +710,13 @@ nav .navLinks .links a {
   word-spacing: 70px;
 }
 nav .navLinks .links a:hover {
-  color: #000;
+  height: 50px;
+  width: 200px;
+  padding-top: 10px;
+  border-radius: 8px;
+  text-align: center;
+  background-color: #57d4f7b2;
+  /* color: #000; */
   transition: 0.3s;
   cursor: pointer;
 }
