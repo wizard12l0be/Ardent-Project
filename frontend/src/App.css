@@ -7,8 +7,8 @@
   font-family: "Montserrat", sans-serif;
 }
 body {
-  background: linear-gradient(to right, #00c6ff, #54a1ff);  
-  /* background-image: url("https: //img.freepik.com/free-vector/abstract-medical-wallpaper-template-design_53876-61802.jpg?t=st=1717915513~exp=1717919113~hmac=ac6937c5fe74cb27786b0879c451a10e4787e9cbe8db8ee934ea28700a291781&w=1060"); */
+  /* background: linear-gradient(to right, #00c6ff, #54a1ff);  */
+  background-color: white;
 }
 
 .banner{
@@ -97,12 +97,14 @@ h6 {
   letter-spacing: 2px;
   word-spacing: 6px;
   font-size: 50px;
-  background: linear-gradient(to right, #ffffff, #f0f0f0, #e0e0e0, #d0d0d0, #ecf1f7);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent; 
+  /* background: linear-gradient(to right, #ffffff, #f0f0f0, #e0e0e0, #d0d0d0, #ecf1f7); */
+  /* -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; */
+  color: #08a8c4;
 }
 .hero .banner p {
-  color:whitesmoke;
+  color: #08a8c4;
+  /* color:whitesmoke; */
   letter-spacing: 0px;
   line-height: 35px;
   font-size: 20px;
@@ -668,7 +670,11 @@ nav {
   z-index: 2;
   word-spacing: 40px;
   position: fixed;
-  background-color: #1e5799;
+  /* background-color: #1e5799; */
+  background-color: rgba(255, 255, 255, 0.5); /* 50% opacity */
+  box-shadow: #08a8c4;
+
+
 }
 nav .logo {
   flex: 1;
@@ -687,11 +693,12 @@ nav .navLinks {
 nav .navLinks .links {
   display: flex;
   gap: 55px;
-  color: white;
+  color: #08a8c4;
 }
 nav .navLinks .links a {
   text-decoration: none;
-  color: #f8f8fa;
+  color: #08a8c4;
+  
   font-size: 20px;
   font-weight: 600;
   letter-spacing: 1.4px;
