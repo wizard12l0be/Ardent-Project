@@ -82,13 +82,13 @@ const Login = () => {
             style={{
               gap: "10px",
               justifyContent: "flex-end",
-              flexDirection: "row",backgroundColor:"white"
+              flexDirection: "row", background: "transparent"
             }}
           >
-            <p style={{ marginBottom: 0, color: "#1e33f4" , fontSize:"15px",fontWeight:"semibold"}}>Not Registered?</p>
+            <p style={{ marginBottom: 0, color: "white" , fontSize:"15px",fontWeight:"bold"}}>Not Registered?</p>
             <Link
               to={"/register"}
-              style={{ textDecoration: "none", color: "#1e33f4",fontSize:"15px",fontWeight:"semibold"}}
+              style={{ textDecoration: "none", color: "white",fontSize:"15px",fontWeight:"bold"}}
             >
               Register Now
             </Link>
