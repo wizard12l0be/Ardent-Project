@@ -45,7 +45,7 @@ const Footer = () => {
         {/* <hr /> */}
         <div className="content" style={{paddingTop: 35}}>
           <div>
-            <img src="/logo.png" alt="logo" className="logo-img" />
+            <img src="images/logo.png" alt="logo" className="logo-img-footer" />
           </div>
           <div>
             <h4>Quick Links</h4>
