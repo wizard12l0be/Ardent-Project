@@ -41,7 +41,7 @@ const Footer = () => {
 
   return (
     <>
-      <footer className={"container"} style={{ backgroundColor: "#08a8c4" }}>
+      <footer className={"container"} style={{ backgroundColor: "white" }}>
         {/* <hr /> */}
         <div className="content" style={{paddingTop: 35}}>
           <div>
@@ -50,33 +50,33 @@ const Footer = () => {
           <div>
             <h4>Quick Links</h4>
             <ul>
-              <Link to={"/"} style={{color:"lightgrey"}}>Home</Link>
-              <Link to={"/appointment"} style={{ color: "lightgrey" }}>Appointment</Link>
-              <Link to={"/about"} style={{ color: "lightgrey" }}>About</Link>
+              <Link to={"/"} style={{color:"#08a8c4"}}>Home</Link>
+              <Link to={"/appointment"} style={{ color: "#08a8c4" }}>Appointment</Link>
+              <Link to={"/about"} style={{ color: "#08a8c4"  }}>About</Link>
             </ul>
           </div>
           <div>
             <h4>Hours</h4>
             <ul>
               {hours.map((element) => (
-                <li key={element.id} style={{ color: "lightgrey" }}>
-                  <span style={{ color: "lightgrey" }}>{element.day}</span>
-                  <span style={{ color: "lightgrey" }}>{element.time}</span>
+                <li key={element.id} style={{ color: "#08a8c4"  }}>
+                  <span style={{ color: "#08a8c4"  }}>{element.day}</span>
+                  <span style={{ color: "#08a8c4" }}>{element.time}</span>
                 </li>
               ))}
             </ul>
           </div>
           <div>
             <h4>Contact</h4>
-            <div style={{ color: "lightgrey" }}>
+            <div style={{ color: "#08a8c4"  }}>
               <FaPhone />
-              <span style={{ color: "lightgrey" }}>999-999-9999</span>
+              <span style={{ color: "#08a8c4" }}>999-999-9999</span>
             </div>
-            <div style={{ color: "lightgrey" }}>
+            <div style={{ color: "#08a8c4" }}>
               <MdEmail />
               <span>zeelab@gmail.com</span>
             </div>
-            <div style={{ color: "lightgrey" }}>
+            <div style={{ color: "#08a8c4" }}>
               <FaLocationArrow />
               <span>Karachi, Pakistan</span>
             </div>
