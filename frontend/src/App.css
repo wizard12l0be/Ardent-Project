@@ -384,12 +384,7 @@ input {
     /* box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); */
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
-    /* border: 2px solid rgba(255, 255, 255, 0.8); */
-    /* Enhanced white border */
-    /* padding: 30px; */
-    /* text-align: center; */
-    /* width: 300px; */
-    /* border-radius: 100px; */
+   
       box-shadow: inset 6px 6px 6px #cbced1, inset -6px -6px 6px white;
 }
 textarea {

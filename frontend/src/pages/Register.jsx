@@ -135,7 +135,7 @@ const Register = () => {
           >
             <p style={{ marginBottom: 0 }} className="question">Already Registered?</p>
             <Link
-              to={"/signin"}
+              to={"/login"}
               style={{ textDecoration: "none", color: "#271776ca", fontWeight: "bold" }}
             >
               Login Now
