@@ -83,25 +83,17 @@ const Departments = () => {
         >
           {departmentsArray.map((depart, index) => {
             return (
-              
-              
+              <div className="animatedImg">
               <div key={index} className="card card-slider slide">
-                
                 <div className="depart-name">{depart.name}</div>
                 <img src={depart.imageUrl} alt="Department" />
-                <div key={index} className="card card-slider">
-                
+                <div key={index} className="card card-slider slide2">
                 <div className="depart-name">{depart.name}</div>
                 <img src={depart.imageUrl} alt="Department" />
-                
-             </div>
-                
-             </div>
-             
-             
-             
-              
-              
+               </div> 
+               </div>
+               
+               </div>   
             );
           })}
         </Carousel>

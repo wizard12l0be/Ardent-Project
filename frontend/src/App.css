@@ -707,10 +707,13 @@ h2 {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s, box-shadow 0.3s;
   background-color: #fff;
-  display: inline-block;
   flex: 0 0 auto; 
   margin: 0 10px; 
 }
+.slide2{
+  display: inline-block;
+}
+
 
 /* Styling for the department name */
 .depart-name {
@@ -722,20 +725,18 @@ h2 {
 /* Styling for the department image */
 .card-slider img {
   width: 100%;
-  height: 400px;
+  height: 350px;
   border-radius: 5px;
-  object-fit: cover;
-  display: inline-block;
+  
+ 
   
 }
-.slide{
-  display: inline-block;
-}
+
 
 /* Infinite scroll animation for the carousel */
  @keyframes slider {
   from{
-    transform: translateX(100%);
+    transform: translateX(0);
   }
   to{
     transform: translateX(-100%);
@@ -743,7 +744,7 @@ h2 {
 }
 .card-slider{
 
-  animation: 5s slider infinite linear ;
+  animation: 4s slider infinite linear ;
 }
 
 /* Applying the animation to the carousel */
