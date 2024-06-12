@@ -219,7 +219,7 @@ const AppointmentForm = () => {
               style={{ flex: "none", width: "25px" }}
             />
           </div>
-          <button style={{ margin: "0 auto" }}>GET APPOINTMENT</button>
+          <button style={{ margin: "0 auto",width: 350 }}>GET APPOINTMENT</button>
         </form>
       </div>
     </>
