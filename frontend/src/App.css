@@ -242,7 +242,7 @@ h6 {
   max-width: 800px;
   text-align: center;
   
-  /* background-image: url("/images/login-bg1.jpg");  */
+  background-image: url("/images/login-bg1.jpg");  
   background-size: cover;
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
