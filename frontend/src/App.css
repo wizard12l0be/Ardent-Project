@@ -690,6 +690,8 @@ img{
 /*my code*/
 
 /* General container styling */
+
+
 .container.departments {
   text-align: center;
   padding: 20px;
@@ -710,10 +712,6 @@ h2 {
   flex: 0 0 auto; 
   margin: 0 10px; 
 }
-.slide2{
-  display: inline-block;
-}
-
 
 /* Styling for the department name */
 .depart-name {
@@ -727,9 +725,6 @@ h2 {
   width: 100%;
   height: 350px;
   border-radius: 5px;
-  
- 
-  
 }
 
 
@@ -742,22 +737,13 @@ h2 {
     transform: translateX(-100%);
   }
 }
-.card-slider{
-
+.animatedImg{
+  
+display: inline-block;
   animation: 4s slider infinite linear ;
 }
 
-/* Applying the animation to the carousel */
-/* .carousel-container {
-  overflow: hidden;
-  position: relative;
-  width: 100%;
-} */
 
-/* .carousel-track {
-  display: flex;
-  animation: scroll 20s linear infinite;
-} */
 
 /* Adjusting the carousel items */
 .carousel-item {
