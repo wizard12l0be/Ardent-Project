@@ -271,6 +271,8 @@ h6 {
     margin: 100px auto 20px auto;
     /* background: rgba(255, 255, 255, 0.121); */
     /* background: linear-gradient(to right, #00c6ff, #54a1ff); */
+    background-image: url("/images/app-bg1.jpg");
+    background-size: cover;
     border-radius: 15px;
     /* box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); */
     /* box-shadow: 14px 14px 20px #cbced1, -14px -14px 20px rgb(192, 190, 190); */
@@ -287,7 +289,7 @@ h6 {
     margin: 100px auto 20px auto;
     /* background: rgba(255, 255, 255, 0.121); */
     /* background: linear-gradient(to right, #00c6ff, #54a1ff); */
-    background-image: url("images/appoin.jpg");
+    background-image: url("/images/bg.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 8px;
