@@ -212,7 +212,7 @@ const AppointmentForm = () => {
              
             }}
           >
-            <p style={{ marginBottom: 0, color:"blue", fontWeight:"semibold" }}>Have you visited before?</p>
+            <p style={{ marginBottom: 0, color:"blue", fontWeight:"bold" }}>Have you visited before?</p>
             <input
               type="checkbox"
               checked={hasVisited}
@@ -220,7 +220,7 @@ const AppointmentForm = () => {
               style={{ flex: "none", width: "25px" }}
             />
           </div>
-          <button style={{ margin: "0 auto" }}>GET APPOINTMENT</button>
+          <button style={{ margin: "0 auto", width: 350 }}>GET APPOINTMENT</button>
         </form>
       </div>
     </>
