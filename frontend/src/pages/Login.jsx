@@ -52,7 +52,7 @@ const Login = () => {
       <div className="container form-component login-form">
         <h2>Sign In</h2>
         <p className="continue">Please Login To Continue</p>
-        <p className="describe">
+        <p className="describe" style={{color: "white"}}>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat culpa
           voluptas expedita itaque ex, totam ad quod error?
         </p>

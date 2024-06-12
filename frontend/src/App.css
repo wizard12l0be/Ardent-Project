@@ -236,7 +236,9 @@ h6 {
   max-width: 800px;
   text-align: center;
   /* background: rgba(96, 200, 235, 0.89); */
-  background: linear-gradient(to right, #00c6ff, #54a1ff);
+  /* background: linear-gradient(to right, #00c6ff, #54a1ff); */
+  background-image: url("/images/login-bg1.jpg");
+  background-size: cover;
     /* border-radius: 15px; */
     /* box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); */
     /* box-shadow: 14px 14px 20px #cbced1, -14px -14px 20px rgb(192, 190, 190); */
@@ -245,14 +247,16 @@ h6 {
     border: 1px solid rgba(255, 255, 255, 0.2);
     padding: 30px;
 }
-.login-form:hover {
+/* .login-form:hover {
   background: linear-gradient(to right, #54a1ff, #00c6ff);
-}
+} */
 .register-form {
   max-width: 1200px;
   margin: 100px auto 20px auto;
   /* background: rgba(255, 255, 255, 0.121); */
-  background: linear-gradient(to right, #00c6ff, #54a1ff);
+  /* background: linear-gradient(to right, #00c6ff, #54a1ff); */
+  background-image: url("/images/register-bg.jpg");
+    background-size: cover;
     /* border-radius: 15px; */
     /* box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); */
     /* box-shadow: 14px 14px 20px #cbced1, -14px -14px 20px rgb(192, 190, 190); */
@@ -263,9 +267,9 @@ h6 {
     text-align: center;
     margin-bottom: 100px;
 }
-.register-form:hover {
+/* .register-form:hover {
   background: linear-gradient(to right, #54a1ff, #00c6ff);
-}
+} */
 .appointment-form {
   max-width: 1200px;
     margin: 100px auto 20px auto;
@@ -340,20 +344,26 @@ h6 {
     text-fill-color: transparent;
 }
 .register-form .continue {
-  color: rgb(237, 233, 233);
+  color: rgb(46, 157, 242);
+    font-weight: bolder;
   text-align: center;
   margin-left: 200px;
 }
 .register-form .describe {
-  color: rgb(217, 214, 214);
+  color: rgb(46, 157, 242);
     text-align: center;
     margin-left: 200px;
     font-size: 1rem;
 }
 .login-form .continue {
-  color: rgb(237, 233, 233);
+  color: white;
+  font-weight: bolder;
   text-align: center;
   /* margin-left: 200px; */
+}
+.login-form .describe {
+  color: white;
+  font-weight: bold;
 }
 .login-form {
   box-shadow: 14px 14px 20px #cbced1, -14px -14px 20px rgb(192, 190, 190);
