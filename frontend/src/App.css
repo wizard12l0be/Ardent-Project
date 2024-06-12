@@ -707,7 +707,9 @@ h2 {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s, box-shadow 0.3s;
   background-color: #fff;
-  position: relative;
+  display: inline-block;
+  flex: 0 0 auto; 
+  margin: 0 10px; 
 }
 
 /* Styling for the department name */
@@ -723,21 +725,20 @@ h2 {
   height: 400px;
   border-radius: 5px;
   object-fit: cover;
+  display: inline-block;
+  
 }
-
-/* Hover effect for the card */
-.card-slider:hover {
-  transform: scale(1.05);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+.slide{
+  display: inline-block;
 }
 
 /* Infinite scroll animation for the carousel */
  @keyframes slider {
   from{
-    transform: translateX(0);
+    transform: translateX(100%);
   }
   to{
-    transform: translateY(-100%);
+    transform: translateX(-100%);
   }
 }
 .card-slider{
@@ -746,16 +747,16 @@ h2 {
 }
 
 /* Applying the animation to the carousel */
-.carousel-container {
+/* .carousel-container {
   overflow: hidden;
   position: relative;
   width: 100%;
-}
+} */
 
-.carousel-track {
+/* .carousel-track {
   display: flex;
   animation: scroll 20s linear infinite;
-}
+} */
 
 /* Adjusting the carousel items */
 .carousel-item {

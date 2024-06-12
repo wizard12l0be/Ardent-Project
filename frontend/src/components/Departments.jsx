@@ -84,15 +84,22 @@ const Departments = () => {
           {departmentsArray.map((depart, index) => {
             return (
               
-              <div key={index} className="card card-slider">
+              
+              <div key={index} className="card card-slider slide">
+                
+                <div className="depart-name">{depart.name}</div>
+                <img src={depart.imageUrl} alt="Department" />
+                <div key={index} className="card card-slider">
                 
                 <div className="depart-name">{depart.name}</div>
                 <img src={depart.imageUrl} alt="Department" />
                 
              </div>
+                
+             </div>
              
-          
-
+             
+             
               
               
             );
