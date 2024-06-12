@@ -45,9 +45,11 @@ const Navbar = () => {
             <Link to={"/about"} onClick={() => setShow(!show)} className="about">
               AboutUs
             </Link>
+            <div className="navlinks appoin">
             <Link to={"/appointment"} onClick={() => setShow(!show)} className="appoint">
               Appointment
             </Link>
+            </div>
            
           </div>
           {isAuthenticated ? (

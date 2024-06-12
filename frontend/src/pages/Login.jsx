@@ -52,27 +52,27 @@ const Login = () => {
       <div className="container form-component login-form">
         <h2>Sign In</h2>
         <p className="continue">Please Login To Continue</p>
-        <p className="describe" style={{color: "white"}}>
+        <p className="describe" style={{color: "#1e33f4"}}>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat culpa
           voluptas expedita itaque ex, totam ad quod error?
         </p>
         <form onSubmit={handleLogin}>
           <input
-            style={{ borderRadius: 50, marginLeft: 25, marginRight: 10 }}
+            style={{ borderRadius: 10, marginLeft: 25, marginRight: 10 ,backgroundColor:"white"}}
             type="text"
             placeholder="Email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
           />
           <input
-            style={{ borderRadius: 50, marginLeft: 25, marginRight: 10 }}
+            style={{ borderRadius: 10, marginLeft: 25, marginRight: 10 ,backgroundColor:"white"}}
             type="password"
             placeholder="Password"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
           />
           <input
-            style={{ borderRadius: 50, marginLeft: 25, marginRight: 10 }}
+            style={{ borderRadius: 10, marginLeft: 25, marginRight: 10 ,backgroundColor:"white"}}
             type="password"
             placeholder="Confirm Password"
             value={confirmPassword}
@@ -82,18 +82,18 @@ const Login = () => {
             style={{
               gap: "10px",
               justifyContent: "flex-end",
-              flexDirection: "row",
+              flexDirection: "row",backgroundColor:"white"
             }}
           >
-            <p style={{ marginBottom: 0, color: "white" }}>Not Registered?</p>
+            <p style={{ marginBottom: 0, color: "#1e33f4" , fontSize:"15px",fontWeight:"semibold"}}>Not Registered?</p>
             <Link
               to={"/register"}
-              style={{ textDecoration: "none", color: "#271776ca", fontWeight: "bold"}}
+              style={{ textDecoration: "none", color: "#1e33f4",fontSize:"15px",fontWeight:"semibold"}}
             >
               Register Now
             </Link>
           </div>
-          <div style={{ justifyContent: "center", alignItems: "center" }}>
+          <div style={{ justifyContent: "center", alignItems: "center" ,fontSize:"5px"}}>
             <button type="submit">Login</button>
           </div>
         </form>

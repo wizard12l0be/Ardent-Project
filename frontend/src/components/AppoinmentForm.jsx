@@ -96,14 +96,14 @@ const AppointmentForm = () => {
         <form onSubmit={handleAppointment}>
           <div>
             <input
-              style={{ borderRadius: 10, marginLeft: 25, marginRight: 10 }}
+              style={{ borderRadius: 10, marginLeft: 25, marginRight: 10,backgroundColor:"white" }}
               type="text"
               placeholder="First Name"
               value={firstName}
               onChange={(e) => setFirstName(e.target.value)}
             />
             <input
-              style={{ borderRadius: 10, marginRight: 25 }}
+              style={{ borderRadius: 10, marginRight: 25 ,backgroundColor:"white"}}
               type="text"
               placeholder="Last Name"
               value={lastName}
@@ -112,14 +112,14 @@ const AppointmentForm = () => {
           </div>
           <div>
             <input
-              style={{ borderRadius: 10, marginLeft: 25, marginRight: 10 }}
+              style={{ borderRadius: 10, marginLeft: 25, marginRight: 10 ,backgroundColor:"white"}}
               type="text"
               placeholder="Email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
             />
             <input
-              style={{ borderRadius: 10, marginRight: 25 }}
+              style={{ borderRadius: 10, marginRight: 25 ,backgroundColor:"white"}}
               type="number"
               placeholder="Mobile Number"
               value={phone}
@@ -128,14 +128,14 @@ const AppointmentForm = () => {
           </div>
           <div>
             <input
-              style={{ borderRadius: 10, marginLeft: 25, marginRight: 10, height: 55 }}
+              style={{ borderRadius: 10, marginLeft: 25, marginRight: 10, height: 55 ,backgroundColor:"white"}}
               type="number"
               placeholder="NIC"
               value={nic}
               onChange={(e) => setNic(e.target.value)}
             />
             <input
-              style={{ borderRadius: 10, marginRight: 25, height: 55, fontSize: 18, color: "#9083d5" }}
+              style={{ borderRadius: 10, marginRight: 25, height: 55, fontSize: 18, color: "#9083d5",backgroundColor:"white" }}
               type="date"
               placeholder="Date of Birth"
               value={dob}
@@ -143,13 +143,13 @@ const AppointmentForm = () => {
             />
           </div>
           <div>
-            <select value={gender} onChange={(e) => setGender(e.target.value)} style={{ borderRadius: 10, marginLeft: 25, marginRight: 10, fontSize: 18 }}>
+            <select value={gender} onChange={(e) => setGender(e.target.value)} style={{ borderRadius: 10, marginLeft: 25, marginRight: 10, fontSize: 18 ,backgroundColor:"white"}}>
               <option value="">Select Gender</option>
               <option value="Male">Male</option>
               <option value="Female">Female</option>
             </select>
             <input
-              style={{ borderRadius: 10, marginRight: 25, height: 55, fontSize: 18, color: "#9083d5" }}
+              style={{ borderRadius: 10, marginRight: 25, height: 55, fontSize: 18, color: "#9083d5",backgroundColor:"white" }}
               type="date"
               placeholder="Appointment Date"
               value={appointmentDate}
@@ -158,7 +158,7 @@ const AppointmentForm = () => {
           </div>
           <div>
             <select
-              style={{ borderRadius: 10, marginLeft: 30, marginRight: 10, fontSize: 21 }}
+              style={{ borderRadius: 10, marginLeft: 30, marginRight: 10, fontSize: 21,backgroundColor:"white" }}
               value={department}
               onChange={(e) => {
                 setDepartment(e.target.value);
@@ -175,7 +175,7 @@ const AppointmentForm = () => {
               })}
             </select>
             <select
-              style={{ borderRadius: 10, marginLeft: 25, marginRight: 35, fontSize: 21 }}
+              style={{ borderRadius: 10, marginLeft: 25, marginRight: 35, fontSize: 21 ,backgroundColor:"white"}}
               value={`${doctorFirstName} ${doctorLastName}`}
               onChange={(e) => {
                 const [firstName, lastName] = e.target.value.split(" ");
@@ -198,7 +198,7 @@ const AppointmentForm = () => {
             </select>
           </div>
           <textarea
-          style={{borderRadius: 10, marginLeft:25, marginRight:25, height:40}}
+          style={{borderRadius: 10, marginLeft:25, marginRight:25, height:40,backgroundColor:"white"}}
             rows="10"
             value={address}
             onChange={(e) => setAddress(e.target.value)}
@@ -209,9 +209,10 @@ const AppointmentForm = () => {
               gap: "10px",
               justifyContent: "flex-end",
               flexDirection: "row",
+             
             }}
           >
-            <p style={{ marginBottom: 0, color:"blue", fontWeight:"bold" }}>Have you visited before?</p>
+            <p style={{ marginBottom: 0, color:"blue", fontWeight:"semibold" }}>Have you visited before?</p>
             <input
               type="checkbox"
               checked={hasVisited}
@@ -219,7 +220,9 @@ const AppointmentForm = () => {
               style={{ flex: "none", width: "25px" }}
             />
           </div>
-          <button style={{ margin: "0 auto" }}>GET APPOINTMENT</button>
+          <button 
+          className="Appoinmentbtn"
+          style={{ margin: "0 auto" }}>GET APPOINTMENT</button>
         </form>
       </div>
     </>

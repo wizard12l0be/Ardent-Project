@@ -213,11 +213,12 @@ h6 {
   text-align: center;
   font-size: 20px;
   padding: 15px;
-  width: 130px;
+  width: 200px;
   transition: all 0.5s;
   cursor: pointer;
   margin: 5px;
 }
+
 .form-component .wrapper {
   display: flex;
   gap: 50px;
@@ -233,17 +234,15 @@ h6 {
 .form-component .wrapper .banner:last-child img {
   max-width: 450px;
 }
+
+
 .login-form {
-  margin: 100px auto 20px auto;
+  margin: 150px auto 120px auto;
   max-width: 800px;
   text-align: center;
-  /* background: rgba(96, 200, 235, 0.89); */
-  /* background: linear-gradient(to right, #00c6ff, #54a1ff); */
-  background-image: url("/images/login-bg1.jpg");
+  
+  /* background-image: url("/images/login-bg-1.jpg"); */
   background-size: cover;
-    /* border-radius: 15px; */
-    /* box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); */
-    /* box-shadow: 14px 14px 20px #cbced1, -14px -14px 20px rgb(192, 190, 190); */
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     border: 1px solid rgba(255, 255, 255, 0.2);
@@ -275,13 +274,9 @@ h6 {
 .appointment-form {
   max-width: 1200px;
     margin: 100px auto 20px auto;
-    /* background: rgba(255, 255, 255, 0.121); */
-    /* background: linear-gradient(to right, #00c6ff, #54a1ff); */
     background-image: url("/images/app-bg1.jpg");
     background-size: cover;
-    border-radius: 15px;
-    /* box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); */
-    /* box-shadow: 14px 14px 20px #cbced1, -14px -14px 20px rgb(192, 190, 190); */
+    border-radius: 15px; 
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     border: 1px solid rgba(255, 255, 255, 0.2);
@@ -290,7 +285,7 @@ h6 {
     margin-bottom: 100px;
 }
 .appoinh2{
-  color: #08a8c4;
+  color: #1e33f4;
 }
 
 .message-form {
@@ -318,29 +313,14 @@ h6 {
 
 
 .login-form h2 {
-  /* color: #000; */
-  background: linear-gradient(to right, rgb(126, 30, 245), rgb(3, 45, 75));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    text-fill-color: transparent;
+ color: #1e33f4;
 }
 
 .appointment-form h2 {
-  background: linear-gradient(to right, rgb(126, 30, 245), rgb(110, 180, 230));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    text-fill-color: transparent;
-    /* color: #08a8c4; */
+    color: #1e33f4;
 }
 .message-form h2{
-  /* background: linear-gradient(to right, rgb(33, 140, 228), rgb(3, 45, 75));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    text-fill-color: transparent; */
-    color: #08a8c4;
+ color: #1e33f4;
 }
 .register-form h2 {
   /* color: white; */
@@ -369,8 +349,8 @@ h6 {
   /* margin-left: 200px; */
 }
 .login-form .describe {
-  color: white;
-  font-weight: bold;
+ color: #1e33f4;
+ 
 }
 .login-form {
   box-shadow: 14px 14px 20px #cbced1, -14px -14px 20px rgb(192, 190, 190);
@@ -541,7 +521,7 @@ footer h4{
 }
 .message-form h2 {
   text-align: center;
-  color: #000;
+  color: #08a8c4;
   position: relative;
 }
 .message-form img {
@@ -636,9 +616,11 @@ footer .content div:last-child div svg {
   }
 }
 
+
 .departments {
+  background-color: #292a2b;
   padding-top: 30px;
-  padding-bottom: 50px;
+  /* padding-bottom: 50rgb(41, 43, 44) */
 }
 .departments h2 {
   color: #08a8c4;
@@ -754,6 +736,7 @@ nav .navLinks {
 nav .navLinks .links {
   display: flex;
   gap: 55px;
+  align-items: center;
   color: #08a8c4;
 }
 nav .navLinks .links a {
@@ -763,7 +746,7 @@ nav .navLinks .links a {
   font-size: 20px;
   font-weight: 600;
   letter-spacing: 1.4px;
-  word-spacing: 70px;
+  word-spacing: 150px;
     /* text-shadow: 0 0 15px #8e54e9; */
       transition: all 300ms cubic-bezier(0.075, 0.82, 0.165, 1);
 
@@ -777,12 +760,12 @@ nav .navLinks .links a::after, nav .navLinks .links a::before {
     transition: all 0.3s ease;
     margin-top: 2px;
 }
-nav .navLinks .links a::after {
+/* nav .navLinks .links a::after {
   bottom: 25%;
 }
 nav .navLinks .links a::before {
   top: 25%;
-}
+} */
 nav .navLinks .links a:hover {
  
   /* padding-top: 10px; */
@@ -807,23 +790,20 @@ nav .navLinks .links a:hover::before {
       top: 25%;
       background-color: #0e80d2;
 }
+nav .navlinks .appoin a:hover ::before{
+  width: 170px;
+  height: 1px;
+  top: 25%;
+  background-color: #0e80d2;
 
-/* nav .btn {
-  padding: 8px 20px;
-  color: #e5e5e5;
-  background: transparent;
-  border: none;
-  border-radius: 20px;
-  font-size: 20px;
-  font-weight: 600;
-  z-index: 2;
 }
-nav .logoutBtn {
-  background: linear-gradient(135deg, black, rgb(49, 49, 49));
-} */
-/* nav .loginBtn {
-  background: linear-gradient(135deg, black, rgb(49, 49, 49));
-} */
+nav .navlinks .appoin a:hover ::after{
+  width: 170px;
+  height: 1px;
+  top: 25%;
+  background-color: #0e80d2;
+
+}
 
 /* loginbtn */
  nav .loginBtn {
