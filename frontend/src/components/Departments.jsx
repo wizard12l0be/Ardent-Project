@@ -3,6 +3,8 @@ import React from "react";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 
+// import styled,{keyframes,css} from "styled-components";
+
 const Departments = () => {
   const departmentsArray = [
     {
@@ -81,10 +83,15 @@ const Departments = () => {
         >
           {departmentsArray.map((depart, index) => {
             return (
-              <div key={index} className="card">
+              <div key={index} className="card card-slider">
                 <div className="depart-name">{depart.name}</div>
+                <img src={depart.imageUrl} alt="Department" /> <div className="depart-name">{depart.name}</div>
                 <img src={depart.imageUrl} alt="Department" />
+
               </div>
+
+              
+              
             );
           })}
         </Carousel>
