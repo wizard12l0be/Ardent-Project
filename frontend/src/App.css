@@ -728,6 +728,7 @@ h2 {
 }
 
 
+
 /* Infinite scroll animation for the carousel */
  @keyframes slider {
   from{
@@ -740,10 +741,12 @@ h2 {
 .animatedImg{
   
 display: inline-block;
-  animation: 4s slider infinite linear ;
+  animation: 5s slider infinite linear ;
 }
 
-
+.card:hover .card-slider{
+  animation-play-state: paused;
+}
 
 /* Adjusting the carousel items */
 .carousel-item {
