@@ -837,18 +837,20 @@ nav .navLinks .links a:hover {
   cursor: pointer;
 }
 nav .navLinks .links a:hover::after {
-  width: 100px;
+  width: 100px; 
     height: 1px;
     bottom: 25%;
     background-color: #0e80d2;
 }
 nav .navLinks .links a:hover::before {
-    width: 100px;
+     width: 100px; 
+    /* max-width: fit-content;
+    border: solid 2px #0e80d2; */
       height: 1px;
       top: 25%;
       background-color: #0e80d2;
 }
-nav .navlinks .appoin a:hover ::before{
+/* nav .navlinks .appoint a:hover ::before{
   width: 170px;
   height: 1px;
   top: 25%;
@@ -861,7 +863,7 @@ nav .navlinks .appoin a:hover ::after{
   top: 25%;
   background-color: #0e80d2;
 
-}
+} */
 
 /* loginbtn */
  nav .loginBtn {

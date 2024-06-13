@@ -83,6 +83,7 @@ const Departments = () => {
         >
           {departmentsArray.map((depart, index) => {
             return (
+              // eslint-disable-next-line react/jsx-key
               <div className="animatedImg">
               <div key={index} className="card card-slider slide">
                 <div className="depart-name">{depart.name}</div>
