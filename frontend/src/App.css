@@ -692,7 +692,7 @@ img{
 /* General container styling */
 
 
-.container.departments {
+/* .container.departments {
   text-align: center;
   padding: 20px;
 }
@@ -702,15 +702,30 @@ h2 {
 }
 
 /* Carousel card styling */
+.container.departments {
+  text-align: center;
+  padding: 20px;
+  /* border: solid black; */
+  white-space: nowrap;
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
+/* Carousel card styling */
 .card-slider {
-  border: 1px solid #ddd;
+  display: inline-block;
+  /* border: 1px solid black; */
+  overflow: hidden;
   border-radius: 10px;
   padding: 20px;
+  width: 300px;
+  /* Adjust the width as needed */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s, box-shadow 0.3s;
   background-color: #fff;
-  flex: 0 0 auto; 
-  margin: 0 10px; 
+  margin: 0 10px;
+  transition: transform 0.5s ease-in-out, box-shadow 0.3s;
 }
 
 /* Styling for the department name */
@@ -723,35 +738,48 @@ h2 {
 /* Styling for the department image */
 .card-slider img {
   width: 100%;
-  height: 350px;
+  height: 250px;
+  /* Adjust the height as needed */
   border-radius: 5px;
+  object-fit: cover;
+  /* Ensure the image covers the container */
 }
 
-
-
 /* Infinite scroll animation for the carousel */
- @keyframes slider {
-  from{
+@keyframes scroll {
+  0% {
     transform: translateX(0);
   }
-  to{
+
+  100% {
     transform: translateX(-100%);
   }
 }
-.animatedImg{
-  
-display: inline-block;
-  animation: 5s slider infinite linear ;
+
+/* Apply the scroll animation */
+.scroll-container {
+  display: flex;
+  animation: scroll 1s linear infinite;
+  /* Adjust the duration as needed */
+  scroll-behavior: smooth;
 }
 
-.card:hover .card-slider{
+.scroll-container:hover {
   animation-play-state: paused;
+  /* Pause animation on hover */
+
 }
 
-/* Adjusting the carousel items */
-.carousel-item {
-  min-width: 250px; /* Adjust this value based on your card width */
-  margin-right: 20px; /* Adjust this value based on desired spacing */
+.card-slider:hover {
+  transform: scale(1.005);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  transition: transform 0.5s ease-in-out, box-shadow 0.3s;
+  /* Smooth transition */
+}
+
+/* Hide carousel buttons */
+.react-multiple-carousel__arrow {
+  display: block;
 }
 
 
