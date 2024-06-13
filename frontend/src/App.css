@@ -692,7 +692,7 @@ img{
 /* General container styling */
 
 
-.container.departments {
+/* .container.departments {
   text-align: center;
   padding: 20px;
 }
@@ -702,15 +702,30 @@ h2 {
 }
 
 /* Carousel card styling */
+.container.departments {
+  text-align: center;
+  padding: 20px;
+  /* border: solid black; */
+  white-space: nowrap;
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
+/* Carousel card styling */
 .card-slider {
-  border: 1px solid #ddd;
+  display: inline-block;
+  /* border: 1px solid black; */
+  overflow: hidden;
   border-radius: 10px;
   padding: 20px;
+  width: 300px;
+  /* Adjust the width as needed */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s, box-shadow 0.3s;
   background-color: #fff;
-  flex: 0 0 auto; 
-  margin: 0 10px; 
+  margin: 0 10px;
+  transition: transform 0.5s ease-in-out, box-shadow 0.3s;
 }
 
 /* Styling for the department name */
@@ -723,35 +738,48 @@ h2 {
 /* Styling for the department image */
 .card-slider img {
   width: 100%;
-  height: 350px;
+  height: 250px;
+  /* Adjust the height as needed */
   border-radius: 5px;
+  object-fit: cover;
+  /* Ensure the image covers the container */
 }
 
-
-
 /* Infinite scroll animation for the carousel */
- @keyframes slider {
-  from{
+@keyframes scroll {
+  0% {
     transform: translateX(0);
   }
-  to{
+
+  100% {
     transform: translateX(-100%);
   }
 }
-.animatedImg{
-  
-display: inline-block;
-  animation: 5s slider infinite linear ;
+
+/* Apply the scroll animation */
+.scroll-container {
+  display: flex;
+  animation: scroll 1s linear infinite;
+  /* Adjust the duration as needed */
+  scroll-behavior: smooth;
 }
 
-.card:hover .card-slider{
+.scroll-container:hover {
   animation-play-state: paused;
+  /* Pause animation on hover */
+
 }
 
-/* Adjusting the carousel items */
-.carousel-item {
-  min-width: 250px; /* Adjust this value based on your card width */
-  margin-right: 20px; /* Adjust this value based on desired spacing */
+.card-slider:hover {
+  transform: scale(1.005);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  transition: transform 0.5s ease-in-out, box-shadow 0.3s;
+  /* Smooth transition */
+}
+
+/* Hide carousel buttons */
+.react-multiple-carousel__arrow {
+  display: block;
 }
 
 
@@ -797,7 +825,7 @@ nav .navLinks .links {
   align-items: center;
   color: #08a8c4;
 }
-nav .navLinks .links a {
+/* nav .navLinks .links a {
   text-decoration: none;
   color: #08a8c4;
   text-transform: uppercase;
@@ -806,7 +834,7 @@ nav .navLinks .links a {
   letter-spacing: 1.4px;
   word-spacing: 150px;
     /* text-shadow: 0 0 15px #8e54e9; */
-      transition: all 300ms cubic-bezier(0.075, 0.82, 0.165, 1);
+      /* transition: all 300ms cubic-bezier(0.075, 0.82, 0.165, 1);
 
 }
 nav .navLinks .links a::after, nav .navLinks .links a::before {
@@ -817,39 +845,88 @@ nav .navLinks .links a::after, nav .navLinks .links a::before {
     height: 1px;
     transition: all 0.3s ease;
     margin-top: 2px;
-}
+} */ 
 /* nav .navLinks .links a::after {
   bottom: 25%;
 }
 nav .navLinks .links a::before {
   top: 25%;
 } */
-nav .navLinks .links a:hover {
+/* nav .navLinks .links a:hover {
  
   /* padding-top: 10px; */
   /* border-radius: 8px; */
-  text-align: center;
+  /* text-align: center;
   /* background-color: #57d4f7b2;  */
 /* text-decoration: underline overline; */
-  color: #0e80d2;
-  
+  /* color: #0e80d2;
+   */
   /* transition: 0.3s; */
-  cursor: pointer;
-}
-nav .navLinks .links a:hover::after {
+  /* cursor: pointer;
+}  */
+/* nav .navLinks .links a:hover::after {
   width: 100px; 
     height: 1px;
     bottom: 25%;
     background-color: #0e80d2;
-}
-nav .navLinks .links a:hover::before {
+} */
+/* nav .navLinks .links a:hover::before {
      width: 100px; 
-    /* max-width: fit-content;
-    border: solid 2px #0e80d2; */
+    
       height: 1px;
       top: 25%;
       background-color: #0e80d2;
+} */
+
+nav .navLinks .links a {
+  display: inline-block;
+  padding: 10px 10px 2px 2px;
+  text-decoration: none;
+  color: #08a8c4;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 1.4px;
+  position: relative;
+  overflow: hidden;
+  /* Ensure overflow is hidden to contain the animated border */
+  transition: color 0.3s ease;
+  /* Smooth color transition */
 }
+
+nav .navLinks .links a::before,
+nav .navLinks .links a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  /* Adjust thickness of the border */
+  background-color: #1e33f4;
+  transition: width 0.3s ease;
+}
+
+nav .navLinks .links a::before {
+  top: 0;
+  left: -100%;
+  /* Start from left */
+}
+
+nav .navLinks .links a::after {
+  bottom: 0;
+  right: -100%;
+  /* Start from right */
+}
+
+nav .navLinks .links a:hover::before,
+nav .navLinks .links a:hover::after {
+  width: 100%;
+  /* Expand to full width on hover */
+  left: 0;
+  /* Align left edge */
+  right: 0;
+  /* Align right edge */
+}
+
 /* nav .navlinks .appoint a:hover ::before{
   width: 170px;
   height: 1px;
