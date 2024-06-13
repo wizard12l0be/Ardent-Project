@@ -41,7 +41,7 @@ const Footer = () => {
 
   return (
     <>
-      <footer className={"container"} style={{ backgroundColor: "white" }}>
+      <footer className={"container"} style={{ backgroundColor: "#ADD8E6" }}>
         {/* <hr /> */}
         <div className="content" style={{paddingTop: 35}}>
           <div>

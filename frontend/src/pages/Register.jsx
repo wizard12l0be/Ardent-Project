@@ -133,7 +133,7 @@ const Register = () => {
               flexDirection: "row",
             }}
           >
-            <p style={{ marginBottom: 0 }} className="question">Already Registered?</p>
+            <p style={{ marginBottom: 0, color: "#1e33f4" }} className="question">Already Registered?</p>
             <Link
               to={"/login"}
               style={{ textDecoration: "none", color: "#271776ca", fontWeight: "bold" }}
