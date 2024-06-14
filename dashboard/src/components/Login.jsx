@@ -45,7 +45,7 @@ const Login = () => {
 
   return (
     <>
-      <section className="container form-component">
+      <section className="container form-component" style={{backgroundImage: "url('/dashboard-login-bg.jpg')", backgroundSize: "cover" }}>
         <img src="/logo copy.png" alt="logo" className="logo" />
         <h1 className="form-title">WELCOME TO PATIENT-CENTRIC HEALTHCARE MANAGEMENT</h1>
         <p>Only Admins Are Allowed To Access These Resources!</p>

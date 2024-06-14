@@ -54,7 +54,7 @@ const AddNewAdmin = () => {
   }
 
   return (
-    <section className="page">
+    <section className="page" style={{backgroundImage: "url('/dashboard-bg.jpg')", backgroundSize: "cover"}}>
       <section className="container form-component add-admin-form">
       <img src="/logo copy.png" alt="logo" className="logo"/>
         <h1 className="form-title">ADD NEW ADMIN</h1>

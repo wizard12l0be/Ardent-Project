@@ -52,10 +52,10 @@ const Dashboard = () => {
 
   return (
     <>
-      <section className="dashboard page">
-        <div className="banner">
-          <div className="firstBox">
-            <img src="/doc.png" alt="docImg" />
+      <section className="dashboard page" style={{ backgroundImage: "url('/dashboard-bg.jpg')", backgroundSize: "cover" }}>
+        <div className="banner" style={{height: "300px", width: "2000px",display: "flex",justifyContent: "center", alignItems: "center"}}>
+          <div className="firstBox" style={{height: "230px", marginLeft: "15px", overflow: "hidden"}}>
+            <img src="/logo copy.png" alt="docImg" />
             <div className="content">
               <div>
                 <p>Hello ,</p>
@@ -71,11 +71,11 @@ const Dashboard = () => {
               </p>
             </div>
           </div>
-          <div className="secondBox">
+          <div className="secondBox" style={{ height: "230px" }}>
             <p>Total Appointments</p>
             <h3>1500</h3>
           </div>
-          <div className="thirdBox">
+          <div className="thirdBox" style={{ height: "230px",marginRight: "15px" }}>
             <p>Registered Doctors</p>
             <h3>10</h3>
           </div>
