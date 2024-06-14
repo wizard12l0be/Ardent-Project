@@ -42,22 +42,22 @@ const Doctors = () => {
                 <h4 style={{ overflow: "hidden" }}>{`${element.firstName} ${element.lastName}`}</h4>
                 <div className="details">
                   <p style={{ overflow: "hidden" }}>
-                    Email: <span>{element.email}</span>
+                    Email: <span style={{ overflow: "hidden" }}>{element.email}</span>
                   </p>
-                  <p>
-                    Phone: <span>{element.phone}</span>
+                  <p style={{ overflow: "hidden" }}>
+                    Phone: <span style={{ overflow: "hidden" }}>{element.phone}</span>
                   </p>
-                  <p>
-                    DOB: <span>{element.dob.substring(0, 10)}</span>
+                  <p style={{ overflow: "hidden" }}>
+                    DOB: <span style={{ overflow: "hidden" }}>{element.dob.substring(0, 10)}</span>
                   </p>
-                  <p>
-                    Department: <span>{element.doctorDepartment}</span>
+                  <p style={{ overflow: "hidden" }}>
+                    Department: <span style={{ overflow: "hidden" }}>{element.doctorDepartment}</span>
                   </p>
-                  <p>
-                    NIC: <span>{element.nic}</span>
+                  <p style={{ overflow: "hidden" }}>
+                    NIC: <span style={{ overflow: "hidden" }}>{element.nic}</span>
                   </p>
-                  <p>
-                    Gender: <span>{element.gender}</span>
+                  <p style={{ overflow: "hidden" }}>
+                    Gender: <span style={{ overflow: "hidden" }}>{element.gender}</span>
                   </p>
                 </div>
               </div>
