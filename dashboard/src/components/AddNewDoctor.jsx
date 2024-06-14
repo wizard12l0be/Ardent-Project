@@ -87,7 +87,7 @@ const AddNewDoctor = () => {
   return (
     <section className="page" style={{ backgroundImage: "url('/dashboard-bg.jpg')", backgroundSize: "cover" }}>
       <section className="container add-doctor-form">
-        <img src="/logo copy.png" alt="logo" className="logo2"/>
+        <img src="/logo copy.png" alt="logo" className="logo"/>
         <h1 className="form-title">REGISTER A NEW DOCTOR</h1>
         <form onSubmit={handleAddNewDoctor}>
           <div className="first-wrapper">
