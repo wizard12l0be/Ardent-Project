@@ -27,8 +27,8 @@ const Doctors = () => {
     return <Navigate to={"/login"} />;
   }
   return (
-    <section className="page doctors">
-      <h1>DOCTORS</h1>
+    <section className="page doctors" style={{ backgroundImage: "url('/dashboard-bg.jpg')", backgroundSize: "cover" }}>
+      <h1 style={{overflow: "hidden"}}>DOCTORS</h1>
       <div className="banner">
         {doctors && doctors.length > 0 ? (
           doctors.map((element) => {
