@@ -122,10 +122,14 @@ body {
 .form-component form select,
 .form-component form textarea {
   flex: 1;
-  font-size: 24px;
+  font-size: 20px;
   padding: 10px 10px 10px 40px;
-  border-radius: 7px;
-  border: 1px solid gray;
+  border-radius: 30px;
+  border: 1px solid gray; 
+  backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+  
+    box-shadow: inset 6px 6px 6px #cbced1, inset -6px -6px 6px white;
 }
 .form-component button {
   border-radius: 4px;
