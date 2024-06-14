@@ -29,7 +29,7 @@ const Messages = () => {
   }
 
   return (
-    <section className="page messages">
+    <section className="page messages" style={{ backgroundImage: "url('/dashboard-bg.jpg')", backgroundSize: "cover" }}>
       <h1>MESSAGE</h1>
       <div className="banner">
         {messages && messages.length > 0 ? (

@@ -54,7 +54,7 @@ const AddNewAdmin = () => {
   }
 
   return (
-    <section className="page">
+    <section className="page" style={{backgroundImage: "url('/dashboard-bg.jpg')", backgroundSize: "cover", borderRadius: "15px"}}>
       <section className="container form-component add-admin-form">
       <img src="/logo copy.png" alt="logo" className="logo"/>
         <h1 className="form-title">ADD NEW ADMIN</h1>
@@ -115,7 +115,7 @@ const AddNewAdmin = () => {
             />
           </div>
           <div style={{ justifyContent: "center", alignItems: "center" }}>
-            <button type="submit">ADD ADMIN</button>
+            <button type="submit" style={{overflow: "hidden"}}>ADD ADMIN</button>
           </div>
         </form>
       </section>
