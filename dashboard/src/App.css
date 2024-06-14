@@ -455,7 +455,7 @@ body {
 }
 .doctors .banner .card {
   background: #fff;
-  border-radius: 12px;
+  /* border-radius: 12px; */
   padding: 20px;
   display: flex;
   flex-direction: column;
@@ -464,7 +464,9 @@ body {
 .doctors .banner .card img {
   width: 270px;
   height: 270px;
-  border-radius: 100%;
+  border-radius: 25px;
+  background-size: cover;
+  object-fit: cover;
   margin-bottom: 20px;
 }
 .doctors .banner .card h4 {

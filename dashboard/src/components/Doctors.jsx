@@ -39,9 +39,9 @@ const Doctors = () => {
                   src={element.docAvatar && element.docAvatar.url}
                   alt="doctor avatar"
                 />
-                <h4>{`${element.firstName} ${element.lastName}`}</h4>
+                <h4 style={{ overflow: "hidden" }}>{`${element.firstName} ${element.lastName}`}</h4>
                 <div className="details">
-                  <p>
+                  <p style={{ overflow: "hidden" }}>
                     Email: <span>{element.email}</span>
                   </p>
                   <p>
