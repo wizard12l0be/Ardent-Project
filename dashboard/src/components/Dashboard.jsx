@@ -53,7 +53,7 @@ const Dashboard = () => {
   return (
     <>
       <section className="dashboard page" style={{ backgroundImage: "url('/dashboard-bg1.jpg')", backgroundSize: "cover" }}>
-        <div className="banner" style={{height: "300px", width: "2000px",display: "flex",justifyContent: "center", alignItems: "center"}}>
+        <div className="banner" style={{ height: "300px", width: "2000px", display: "flex", justifyContent: "center", alignItems: "center" }}>
           <div className="firstBox" style={{height: "230px", marginLeft: "15px", overflow: "hidden"}}>
             <img src="/logo copy.png" alt="docImg" />
             <div className="content">
