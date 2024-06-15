@@ -35,21 +35,21 @@ const Messages = () => {
         {messages && messages.length > 0 ? (
           messages.map((element) => {
             return (
-              <div className="card" key={element._id}>
+              <div className="card" key={element._id} style={{ boxShadow: "14px 14px 20px #cbced1, -14px -14px 20px rgb(190, 190, 190)" }}>
                 <div className="details">
-                  <p>
+                  <p style={{ color: "#1e33f4" }}>
                     First Name: <span>{element.firstName}</span>
                   </p>
-                  <p>
+                  <p style={{ color: "#1e33f4" }}>
                     Last Name: <span>{element.lastName}</span>
                   </p>
-                  <p>
+                  <p style={{ color: "#1e33f4" }}>
                     Email: <span>{element.email}</span>
                   </p>
-                  <p>
+                  <p style={{ color: "#1e33f4" }}>
                     Phone: <span>{element.phone}</span>
                   </p>
-                  <p>
+                  <p style={{ color: "#1e33f4" }}>
                     Message: <span>{element.message}</span>
                   </p>
                 </div>

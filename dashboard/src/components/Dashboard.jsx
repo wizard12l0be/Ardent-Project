@@ -80,17 +80,17 @@ const Dashboard = () => {
             <h3>10</h3>
           </div>
         </div>
-        <div className="banner">
-          <h5>Appointments</h5>
+        <div className="banner" style={{ boxShadow: "14px 14px 20px #cbced1, -14px -14px 20px rgb(192, 190, 190)", backgroundImage: "url('/appointment-bg3.jpg')", backgroundSize: "cover", objectFit: "cover" }}>
+          <h5 style={{ color: "#1e33f4", fontWeight: "bolder"}}>APPOINTMENTS</h5>
           <table>
             <thead>
               <tr>
-                <th>Patient</th>
-                <th>Date</th>
-                <th>Doctor</th>
-                <th>Department</th>
-                <th>Status</th>
-                <th>Visited</th>
+                <th style={{ color: "#1e33f4"}}>Patient</th>
+                <th style={{ color: "#1e33f4" }}>Date</th>
+                <th style={{ color: "#1e33f4" }}>Doctor</th>
+                <th style={{ color: "#1e33f4" }}>Department</th>
+                <th style={{ color: "#1e33f4" }}>Status</th>
+                <th style={{ color: "#1e33f4" }}>Visited</th>
               </tr>
             </thead>
             <tbody>
