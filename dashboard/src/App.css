@@ -81,7 +81,7 @@ body {
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  background-image: url("/dashboard/public/newadmin.jpg");
+  /* background-image: url("/newadmin.jpg"); */
 }
 .form-component h2 {
   color: #1e33f4;
@@ -108,6 +108,9 @@ body {
 .add-admin-form form {
   width: 100%;
 }
+/* .add-admin-form .form-component .container {
+  box-shadow: 14px 14px 20px #cbced1, -14px -14px 20px rgb(192, 190, 190);
+} */
 .form-component p:first-child {
   font-size: 28px;
   font-weight: 700;

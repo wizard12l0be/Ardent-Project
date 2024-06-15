@@ -2,6 +2,7 @@
 import React from "react";
 import Hero from "../components/Hero";
 import AppointmentForm from "../components/AppoinmentForm";
+import AppointmentList from "../components/AppointmentList";
 
 const Appointment = () => {
   return (
@@ -11,6 +12,7 @@ const Appointment = () => {
         imageUrl={"/images/Appointment.png"}
       />
       <AppointmentForm />
+      <AppointmentList />
     </>
   );
 };
