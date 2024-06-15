@@ -51,6 +51,9 @@ const Navbar = () => {
             </Link>
             </div>
            
+            <Link to={"/model"} onClick={() => setShow(!show)} className="appoint">
+              PREDICT
+            </Link>
           </div>
           {isAuthenticated ? (
             <button className="logoutBtn btn" onClick={handleLogout}>
