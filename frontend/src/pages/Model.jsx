@@ -57,12 +57,14 @@ function Model() {
       {result && (
         <div id="output_display">
           <h2 id="output_prompt">Our predictions is here..</h2>
+          <div className="p_tag">
           <p id="Output"> <span className="span">Disease:</span>{JSON.stringify(result['Disease'])}</p>
           <p id="Output">  <span className="span">Description :</span>{JSON.stringify(result['Description'])}</p>
           <p id="Output"> <span className="span">Precautions:</span>{result['Precautions'].join(', ')}</p>
           <p id="Output"> <span className="span">Medications:</span>{result['Medications'].join(', ')}</p>
           <p id="Output"> <span className="span">Diet: </span>{result['Diet'].join(', ')}</p>
           <p id="Output"> <span className="span">Workout: </span>{result['Workout'].join(', ')}</p>
+          </div>
         </div>
       )}
     </div>
@@ -70,3 +72,7 @@ function Model() {
 }
 
 export default Model;
+
+
+/*stiff neck, swelling joints, movement stiffness, spinning movements
+constipation,abdominal_pain,diarrhoea, mild_fever,yellow_urine,yellowing_of_eyes,acute liver failure*/
