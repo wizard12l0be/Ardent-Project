@@ -1,12 +1,17 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useContext } from "react";
 import axios from "axios";
 import { GoCheckCircleFill } from "react-icons/go";
 import { AiFillCloseCircle } from "react-icons/ai";
+import { Navigate } from "react-router-dom";
+import { Context } from "../main";
+
 function AppointmentList() {
   const [appointments, setAppointments] = useState([]);
+  const { isAuthenticated } = useContext(Context);
 
   useEffect(() => {
     const fetchAppointments = async () => {
+      if (!isAuthenticated) return;
       try {
         const response = await axios.get(
           "http://localhost:4000/api/v1/appointment/getall",
@@ -25,7 +30,11 @@ function AppointmentList() {
       }
     };
     fetchAppointments();
-  }, []);
+  }, [isAuthenticated]);
+
+  if (!isAuthenticated) {
+    return <Navigate to={"/login"} />;
+  }
 
   return (
     <div
@@ -75,12 +84,10 @@ function AppointmentList() {
                 </td>
                 <td style={{ border: "1px solid black", padding: "8px" }}>
                   {appointment.department}
-                  {/* Assuming appointment_time field exists */}
                 </td>
                 <td style={{ border: "1px solid black", padding: "8px" }}>
                   {appointment.status}
                 </td>
-
                 <td
                   style={{
                     border: "1px solid black",
@@ -88,7 +95,7 @@ function AppointmentList() {
                     marginLeft: "3px",
                   }}
                 >
-                  {appointment.hasVisited === true ? (
+                  {appointment.hasVisited ? (
                     <GoCheckCircleFill className="green" />
                   ) : (
                     <AiFillCloseCircle className="red" />
