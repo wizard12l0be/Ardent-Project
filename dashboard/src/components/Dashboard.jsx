@@ -55,10 +55,10 @@ const Dashboard = () => {
       <section className="dashboard page" style={{ backgroundImage: "url('/dashboard-bg1.jpg')", backgroundSize: "cover" }}>
         <div className="banner" style={{ height: "300px", width: "2000px", display: "flex", justifyContent: "center", alignItems: "center" }}>
           <div className="firstBox" style={{height: "230px", marginLeft: "15px", overflow: "hidden"}}>
-            <img src="/logo copy.png" alt="docImg" />
+            <img src="/logo copy.png" alt="docImg"  className="logo_dashboard"/>
             <div className="content">
               <div>
-                <p>Hello ,</p>
+                <p>Hello,</p>
                 <h5>
                   {admin &&
                     `${admin.firstName} ${admin.lastName}`}{" "}
