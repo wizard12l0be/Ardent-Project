@@ -30,8 +30,8 @@ const Messages = () => {
 
   return (
     <section className="page messages" style={{ backgroundImage: "url('/dashboard-bg.jpg')", backgroundSize: "cover" }}>
-      <div className="w3-container w3-center w3-animate-zoom">
-      <h1 style={{ overflow: "hidden"}} className="heading">MESSAGE</h1>
+      <div  style={{ overflow: "hidden"}} className="w3-container w3-center w3-animate-zoom">
+      <h1  className="heading">MESSAGE</h1>
       </div>
       <div className="banner" style={{ overflow: "hidden"}}>
         {messages && messages.length > 0 ? (
@@ -40,18 +40,18 @@ const Messages = () => {
               <div className=" msz_card" style={{ overflow: "hidden"}} key={element._id} >
                 <div className="details">
                   <p style={{ color: "#1e33f4" }}>
-                    First Name: <span>{element.firstName}</span>
+                    First Name: <span >{element.firstName}</span>
                   </p>
-                  <p >
+                  <p style={{ color: "#1e33f4" }}>
                     Last Name: <span>{element.lastName}</span>
                   </p>
-                  <p>
+                  <p style={{ color: "#1e33f4" }}>
                     Email: <span>{element.email}</span>
                   </p>
-                  <p >
+                  <p style={{ color: "#1e33f4" }}>
                     Phone: <span>{element.phone}</span>
                   </p>
-                  <p >
+                  <p style={{ color: "#1e33f4" }}>
                     Message: <span>{element.message}</span>
                   </p>
                 </div>
