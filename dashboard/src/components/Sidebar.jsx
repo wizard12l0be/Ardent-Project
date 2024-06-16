@@ -16,7 +16,7 @@ import { useNavigate } from "react-router-dom";
 const Sidebar = () => {
   const [show, setShow] = useState(false);
 
-  const { isAuthenticated, setIsAuthenticated } = useContext(Context);
+  const { isAuthenticated, setIsAuthenticated, admin } = useContext(Context);
 
   const handleLogout = async () => {
     await axios
@@ -54,11 +54,12 @@ const Sidebar = () => {
     navigateTo("/admin/addnew");
     setShow(!show);
   };
-
+  // console.log(admin)
+  // console.log(Object.keys(admin).length)
   return (
     <>
       <nav
-        style={!isAuthenticated ? { display: "none" } : { display: "flex" }}
+        style={!isAuthenticated || (Object.keys(admin).length === 0) ? { display: "none" } : { display: "flex" }}
         className={show ? "show sidebar" : "sidebar"}
       >
         <div className="links">

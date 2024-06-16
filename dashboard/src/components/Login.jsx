@@ -6,75 +6,81 @@ import { Context } from "../main";
 import axios from "axios";
 
 const Login = () => {
+  const [user,setUser] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const [confirmPassword, setConfirmPassword] = useState("");
+  const [role, setRole] = useState("Admin"); // default role is Admin
 
   const { isAuthenticated, setIsAuthenticated } = useContext(Context);
-
   const navigateTo = useNavigate();
 
   const handleLogin = async (e) => {
     e.preventDefault();
+
     try {
-      await axios
-        .post(
-          "http://localhost:4000/api/v1/user/login",
-          { email, password, confirmPassword, role: "Admin" },
-          {
-            withCredentials: true,
-            headers: { "Content-Type": "application/json" },
-          }
-        )
-        .then((res) => {
-          toast.success(res.data.message);
-          setIsAuthenticated(true);
-          navigateTo("/");
-          setEmail("");
-          setPassword("");
-          setConfirmPassword("");
-        });
+      const response = await axios.post(
+        "http://localhost:4000/api/v1/user/login",
+        { email, password, role },
+        {
+          withCredentials: true,
+          headers: { "Content-Type": "application/json" },
+        }
+      );
+console.log(response)
+      toast.success(response.data.message);
+      setIsAuthenticated(true);
+      setUser(response.data.user);
+
+      if (response.data.user.role === "Admin") {
+        navigateTo("/");
+      } else if (response.data.user.role === "Doctor") {
+        navigateTo("/doctor-dashboard");
+      }
     } catch (error) {
       toast.error(error.response.data.message);
     }
   };
 
   if (isAuthenticated) {
-    return <Navigate to={"/"} />;
+    if (user.role === "Admin") {
+      return <Navigate to={"/"} />;
+    } else if (user.role === "Doctor") {
+      return <Navigate to={"/doctor-dashboard"} />;
+    }
   }
 
   return (
-    <>
-      <section className="container form-component" style={{backgroundImage: "url('/dashboard-login-bg.jpg')", backgroundSize: "cover" }}>
-        <img src="/logo copy.png" alt="logo" className="logo" />
-        <h1 className="form-title">WELCOME TO PATIENT-CENTRIC HEALTHCARE MANAGEMENT</h1>
-        <p>Only Admins Are Allowed To Access These Resources!</p>
-        <form onSubmit={handleLogin}>
+    <div className="container form-component login-form">
+      <h2>Login</h2>
+      <p>Please Login To Continue</p>
+      <form onSubmit={handleLogin}>
+        <div>
           <input
-          
             type="text"
             placeholder="Email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
           />
+        </div>
+        <div>
           <input
             type="password"
             placeholder="Password"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
           />
-          <input
-            type="password"
-            placeholder="Confirm Password"
-            value={confirmPassword}
-            onChange={(e) => setConfirmPassword(e.target.value)}
-          />
-          <div style={{ justifyContent: "center", alignItems: "center" }}>
-            <button type="submit">Login</button>
-          </div>
-        </form>
-      </section>
-    </>
+        </div>
+        <div>
+          <select value={role} onChange={(e) => setRole(e.target.value)}>
+            <option value="Admin">Admin</option>
+            <option value="Doctor">Doctor</option>
+          </select>
+        </div>
+        <div>
+          <button type="submit">Login</button>
+        </div>
+      </form>
+    </div>
   );
 };
 

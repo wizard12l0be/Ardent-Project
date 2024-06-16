@@ -1024,9 +1024,10 @@ nav svg {
     position: fixed;
     left: 0;
     height: 100%;
-    width: 400px;
+    width: 450px;
     background: #ffffffbf;
     top: 79px;
+    
   }
   nav .showmenu {
     display: flex;
