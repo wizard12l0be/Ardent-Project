@@ -54,8 +54,8 @@ const Navbar = () => {
           </div>
 
           <button className="Ask_btn">
-         
-            <Link to={"/model"} onClick={() => setShow(!show)} className="symptoms" style={{textDecoration: "none"}}>
+            
+            <Link to={"/model"} onClick={() => setShow(!show)} className="symptoms" style={{ textDecoration: "none", fontSize: "18px" }}>
             ASK_ME
             </Link>
             </button>
