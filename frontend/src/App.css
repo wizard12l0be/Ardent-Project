@@ -1045,6 +1045,7 @@ nav svg {
   nav .navLinks .links {
     flex-direction: column;
     text-align: center;
+    
   }
   nav .navLinks .links a {
     font-weight: 700;
