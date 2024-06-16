@@ -53,12 +53,14 @@ const Navbar = () => {
           
           </div>
 
-          <div className="Ask_btn">
-            <span className="bxs--bot"></span>
-            <Link to={"/model"} onClick={() => setShow(!show)} className="symptoms" style={{textDecoration: "none"}}>
-            ASK ME
-            </Link>
+          <button className="Ask_btn">
+          <div className="vector">
+            <i className="bxs--bot"></i>
             </div>
+            <Link to={"/model"} onClick={() => setShow(!show)} className="symptoms" style={{textDecoration: "none"}}>
+            ASK_ME
+            </Link>
+            </button>
 
           {isAuthenticated ? (
             <button className="logoutBtn btn" onClick={handleLogout}>
