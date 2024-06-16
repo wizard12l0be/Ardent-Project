@@ -54,9 +54,7 @@ const Navbar = () => {
           </div>
 
           <button className="Ask_btn">
-          <div className="vector">
-            <i className="bxs--bot"></i>
-            </div>
+         
             <Link to={"/model"} onClick={() => setShow(!show)} className="symptoms" style={{textDecoration: "none"}}>
             ASK_ME
             </Link>
