@@ -53,11 +53,12 @@ const Navbar = () => {
           
           </div>
 
-          <div className="Ask_btn">
-            <Link to={"/model"} onClick={() => setShow(!show)} className="symptoms">
-            Diagnose_Symptoms
+          <button className="Ask_btn">
+         
+            <Link to={"/model"} onClick={() => setShow(!show)} className="symptoms" style={{textDecoration: "none"}}>
+            ASK_ME
             </Link>
-            </div>
+            </button>
 
           {isAuthenticated ? (
             <button className="logoutBtn btn" onClick={handleLogout}>

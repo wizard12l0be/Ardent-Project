@@ -30,7 +30,9 @@ const Messages = () => {
 
   return (
     <section className="page messages" style={{ backgroundImage: "url('/dashboard-bg.jpg')", backgroundSize: "cover" }}>
-      <h1 style={{ overflow: "hidden"}}>MESSAGE</h1>
+      <div className="w3-container w3-center w3-animate-zoom">
+      <h1 style={{ overflow: "hidden"}} className="heading">MESSAGE</h1>
+      </div>
       <div className="banner" style={{ overflow: "hidden"}}>
         {messages && messages.length > 0 ? (
           messages.map((element) => {

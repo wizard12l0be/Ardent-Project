@@ -815,7 +815,7 @@ nav .logo {
   font-size: 2rem;
 }
 nav .navLinks {
-  flex: 2;
+  flex: 3.5;
 }
 nav .navLinks {
   display: flex;
@@ -827,7 +827,7 @@ nav .navLinks .links {
   gap: 55px;
   align-items: center;
   color: #08a8c4;
-  margin-right: 60px;
+  margin-right: 110px;
 }
 /* nav .navLinks .links a {
   text-decoration: none;
@@ -1012,6 +1012,7 @@ nav svg {
   nav .hamburger {
     display: flex;
   }
+    
   nav .navLinks {
     display: flex;
     flex-direction: column;
@@ -1187,12 +1188,14 @@ footer .logo-img{
   text-align: center;
   font-size: 20px;
   padding: 15px;
-  width: 300px;
+  width: 180px;
   transition: all 0.5s;
   cursor: pointer;
   margin: 5px;
   text-decoration: none;
-  
+  font-weight: bold;
+  letter-spacing: 0;
+  /* display: flex; */
 }
 
 .symptoms{
