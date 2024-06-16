@@ -815,7 +815,7 @@ nav .logo {
   font-size: 2rem;
 }
 nav .navLinks {
-  flex: 2;
+  flex: 3.5;
 }
 nav .navLinks {
   display: flex;
@@ -827,7 +827,7 @@ nav .navLinks .links {
   gap: 55px;
   align-items: center;
   color: #08a8c4;
-  margin-right: 60px;
+  margin-right: 110px;
 }
 /* nav .navLinks .links a {
   text-decoration: none;
