@@ -55,7 +55,7 @@ const Navbar = () => {
 
           <button className="Ask_btn">
             <img src="/images/robot-assistant.png" alt="Chatbot Logo" className="chatbot-logo"></img>
-            <Link to={"/model"} onClick={() => setShow(!show)} className="symptoms" style={{ textDecoration: "none", fontSize: "18px", marginBottom: "20px" }}>
+            <Link to={"/model"} onClick={() => setShow(!show)} className="symptoms" style={{ textDecoration: "none", fontSize: "16px", marginBottom: "10px" }}>
             ASK_ME
             </Link>
             </button>
