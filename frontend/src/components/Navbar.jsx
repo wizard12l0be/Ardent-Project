@@ -54,10 +54,13 @@ const Navbar = () => {
           </div>
 
           <button className="Ask_btn">
-            <img src="/images/robot-assistant.png" alt="Chatbot Logo" className="chatbot-logo"></img>
-            <Link to={"/model"} onClick={() => setShow(!show)} className="symptoms" style={{ textDecoration: "none", fontSize: "18px", marginBottom: "20px" }}>
-            ASK_ME
+           
+            <Link to={"/model"} onClick={() => setShow(!show)} className="symptoms" style={{ textDecoration: "none", fontSize: "18px"}}>
+            Diagnose_Disease
             </Link>
+            <img 
+            style={{ marginBottom:"20px"}}
+            src="/images/robot-assistant.png" alt="Chatbot Logo" className="chatbot-logo"></img>
             </button>
 
           {isAuthenticated ? (
