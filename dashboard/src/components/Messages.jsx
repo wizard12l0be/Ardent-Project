@@ -30,26 +30,26 @@ const Messages = () => {
 
   return (
     <section className="page messages" style={{ backgroundImage: "url('/dashboard-bg.jpg')", backgroundSize: "cover" }}>
-      <h1>MESSAGE</h1>
-      <div className="banner">
+      <h1 style={{ overflow: "hidden"}}>MESSAGE</h1>
+      <div className="banner" style={{ overflow: "hidden"}}>
         {messages && messages.length > 0 ? (
           messages.map((element) => {
             return (
-              <div className="card" key={element._id} style={{ boxShadow: "14px 14px 20px #cbced1, -14px -14px 20px rgb(190, 190, 190)" }}>
+              <div className=" msz_card" style={{ overflow: "hidden"}} key={element._id} >
                 <div className="details">
                   <p style={{ color: "#1e33f4" }}>
                     First Name: <span>{element.firstName}</span>
                   </p>
-                  <p style={{ color: "#1e33f4" }}>
+                  <p >
                     Last Name: <span>{element.lastName}</span>
                   </p>
-                  <p style={{ color: "#1e33f4" }}>
+                  <p>
                     Email: <span>{element.email}</span>
                   </p>
-                  <p style={{ color: "#1e33f4" }}>
+                  <p >
                     Phone: <span>{element.phone}</span>
                   </p>
-                  <p style={{ color: "#1e33f4" }}>
+                  <p >
                     Message: <span>{element.message}</span>
                   </p>
                 </div>

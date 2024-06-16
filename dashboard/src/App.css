@@ -195,6 +195,10 @@ body {
   flex-direction: column;
   gap: 10px;
 }
+
+.logo_dashboard{
+
+}
 .dashboard .banner:first-child {
   height: 35vh;
   display: flex;
@@ -204,13 +208,14 @@ body {
   flex: 2;
   display: flex;
   align-items: center;
-  border-radius: 20px;
-  background: linear-gradient(to right, #00c6ff, #54a1ff);
+  border-radius: 8px;
+  /* background: linear-gradient(to right, #00c6ff, #54a1ff); */
+  background-color: white;
   box-shadow: 1px 1px 20px blue;
   padding: 20px 20px 0 10px;
 }
 .dashboard .banner:first-child .firstBox img {
-  height: 80%;
+  height: 69%;
   flex: 1;
 }
 .dashboard .banner:first-child .firstBox .content {
@@ -233,19 +238,20 @@ body {
   font-size: 16px;
 }
 .dashboard .banner:first-child .secondBox {
-  background: linear-gradient(to right, #00c6ff, #54a1ff);
+  /* background: linear-gradient(to right, #00c6ff, #54a1ff); */
+  background-color: white;
   box-shadow: 1px 1px 20px blue;
-  color: #fff;
+  color: #1e33f4;
 }
 .dashboard .banner:first-child .thirdBox {
-  color: #fff;
-  background: linear-gradient(to right, #00c6ff, #54a1ff);
-    box-shadow: 1px 1px 20px blue;
+  background-color: white;
+  box-shadow: 1px 1px 20px blue;
+  color: #1e33f4;
 }
 .dashboard .banner:first-child .secondBox,
 .dashboard .banner:first-child .thirdBox {
   flex: 1;
-  border-radius: 20px;
+  border-radius: 8px;
   padding: 20px 25px;
   display: flex;
   flex-direction: column;
@@ -264,9 +270,10 @@ body {
   letter-spacing: 2px;
 }
 .dashboard .banner:last-child {
-  height: 65vh;
+  /* height: 100vh; */
+  height: auto;
   background: url("/dashboard-login-bg.jpg");
-  border-radius: 20px;
+  border-radius: 8px;
   padding: 40px;
 }
 .dashboard .banner:last-child h5 {
@@ -279,6 +286,7 @@ body {
   width: 100%;
   color: #111;
   font-size: 20px;
+  padding-top: 10px;
 }
 .dashboard .banner table select {
   font-size: 20px;
@@ -692,4 +700,65 @@ h1 {
       flex-direction: column;
       align-items: center;
   }
+}
+
+
+
+/*************messageboxes*******/
+.msz_card {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 10px 0;
+  padding: 10px 20px;
+  width: 100%;
+  height: 150px; /* Small height */
+  box-sizing: border-box;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  animation: fadeIn 1s ease;
+  display: flex;
+  align-items: center; /* Vertically center the content */
+}
+
+.msz_card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Details styles */
+.details p {
+  margin: 5px 0; /* Adjust margin for smaller height */
+}
+
+.details span {
+  font-weight: bold;
+}
+
+/* No messages style */
+.banner h1 {
+  color: #777;
+  font-size: 24px;
+  margin-top: 40px;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+html, body {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+html::-webkit-scrollbar, body::-webkit-scrollbar {
+  display: none;  /* Chrome, Safari, and Opera */
 }

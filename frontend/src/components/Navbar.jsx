@@ -50,11 +50,15 @@ const Navbar = () => {
               Appointment
             </Link>
             </div>
-           
-            <Link to={"/model"} onClick={() => setShow(!show)} className="appoint">
-              PREDICT
-            </Link>
+          
           </div>
+
+          <div className="Ask_btn">
+            <Link to={"/model"} onClick={() => setShow(!show)} className="symptoms">
+            Diagnose_Symptoms
+            </Link>
+            </div>
+
           {isAuthenticated ? (
             <button className="logoutBtn btn" onClick={handleLogout}>
               LOGOUT

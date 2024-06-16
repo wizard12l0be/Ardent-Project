@@ -38,14 +38,10 @@ function AppointmentList() {
 
   return (
     <div
-      style={{
-        width: "100%",
-        height: "auto",
-        border: "1px solid black",
-        padding: "20px",
-      }}
+    className="Appoin_cnf"
+     
     >
-      <h2>Appointments Confirm</h2>
+      <h2 className="appoin_h2">Appointments Status</h2>
       <table style={{ width: "100%", borderCollapse: "collapse" }}>
         <thead>
           <tr>
@@ -71,21 +67,21 @@ function AppointmentList() {
           {Array.isArray(appointments) &&
             appointments.map((appointment) => (
               <tr key={appointment.id}>
-                <td style={{ border: "1px solid black", padding: "8px" }}>
+                <td style={{ border: "1px solid #1e33f4", padding: "8px" }}>
                   {appointment.doctor.firstName +
                     " " +
                     appointment.doctor.lastName}
                 </td>
-                <td style={{ border: "1px solid black", padding: "8px" }}>
+                <td style={{ border: "1px solid #1e33f4", padding: "8px" }}>
                   {appointment.firstName + " " + appointment.lastName}
                 </td>
-                <td style={{ border: "1px solid black", padding: "8px" }}>
+                <td style={{ border: "1px solid #1e33f4", padding: "8px" }}>
                   {appointment.appointment_date}
                 </td>
-                <td style={{ border: "1px solid black", padding: "8px" }}>
+                <td style={{ border: "1px solid #1e33f4", padding: "8px" }}>
                   {appointment.department}
                 </td>
-                <td style={{ border: "1px solid black", padding: "8px" }}>
+                <td style={{ border: "1px solid #1e33f4", padding: "8px" }}>
                   {appointment.status}
                 </td>
                 <td
