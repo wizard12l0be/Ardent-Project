@@ -1194,12 +1194,21 @@ footer .logo-img{
   transition: all 0.5s;
   cursor: pointer;
   margin: 5px;
+  
   text-decoration: none;
   font-weight: bold;
   letter-spacing: 0;
   /* display: flex; */
 }
-
+.chatbot-logo {
+  width: 30px;
+  /* Adjust the width as needed */
+  height: 30px;
+  /* Adjust the height as needed */
+  margin-right: 10px;
+  /* Space between the logo and text */
+ 
+}
 .symptoms{
   color: white;
 }
