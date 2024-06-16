@@ -816,7 +816,7 @@ nav .logo {
   font-size: 2rem;
 }
 nav .navLinks {
-  flex: 3.5;
+  flex: 2;
 }
 nav .navLinks {
   display: flex;
@@ -1189,13 +1189,16 @@ footer .logo-img{
   text-align: center;
   /* font-size: 10px; */
   padding: 15px;
-  width: 150px;
+  width: 270px;
   height: 50px;
   overflow: hidden;
   transition: all 0.5s;
   cursor: pointer;
   margin: 5px;
-  
+  display: flex;
+  gap: 20px;
+  /* flex-grow: 1; */
+  /* flex: 1.5px; */
   text-decoration: none;
   font-weight: bold;
   letter-spacing: 0;
@@ -1203,9 +1206,9 @@ footer .logo-img{
  
 }
 .chatbot-logo {
-  width: 30px;
+  width: 25px;
   /* Adjust the width as needed */
-  height: 30px;
+  height: 25px;
   /* Adjust the height as needed */
   margin-right: 10px;
   /* Space between the logo and text */
@@ -1213,6 +1216,7 @@ footer .logo-img{
 }
 .symptoms{
   color: white;
+  padding-left: 10px;
 }
 
 /*****/
