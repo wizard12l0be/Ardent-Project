@@ -34,7 +34,7 @@ const Doctors = () => {
           doctors.map((element) => {
             return (
               // eslint-disable-next-line react/jsx-key
-              <div className="card">
+              <div className="card_doct">
                 <img
                   src={element.docAvatar && element.docAvatar.url}
                   alt="doctor avatar"

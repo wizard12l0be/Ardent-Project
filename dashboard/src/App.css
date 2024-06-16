@@ -400,22 +400,37 @@ body {
   color: white
   /* padding: 70px 0; */
 }
+.sidebar{
+   /* Adding a slide-in animation */
+   animation: slideIn 1s ease-out;
+   /* Adding a subtle shadow for depth */
+   box-shadow: 2px 0 5px rgba(0, 0, 0, 0.3);
+}
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
 .sidebar svg {
-  width: 50px;
-  height: 50px;
+  width: 35px;
+  height: 35px;
   font-size: 34px;
 }
 .sidebar svg:hover {
-  background: rgb(169, 231, 248);
+  background: rgb(239, 241, 241);
   color: #1e33f4;
-  border-radius: 5px;
+  border-radius: 10px;
   transition: 0.3s;
   cursor: pointer;
 }
 .sidebar .links {
   display: flex;
   flex-direction: column;
-  gap: 70px;
+  gap: 100px;
 }
 .wrapper {
   display: none;
@@ -761,4 +776,58 @@ html, body {
 
 html::-webkit-scrollbar, body::-webkit-scrollbar {
   display: none;  /* Chrome, Safari, and Opera */
+}
+
+/**********doct_page*****/
+.card_doct{
+  background: white;
+  border-radius: 2.5px;
+  margin: 20px;
+  padding: 20px;
+  width: 250px;
+  height: auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s, box-shadow 0.2s;
+  /* overflow: hidden; */
+  align-items: center;
+}
+
+.card_doct:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.card_doct img {
+  align-items: center;
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+  transition: transform 0.3s ease;
+  
+}
+
+/* .card_doct img:hover {
+  transform: rotate(30deg);
+} */
+
+.card_doct h4 {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+.details {
+  text-align: left;
+  font-size: 0.9em;
+  color: #333;
+}
+
+.details p {
+  margin: 5px 0;
+}
+
+.details span {
+  font-weight: bold;
+  color: #555;
 }
